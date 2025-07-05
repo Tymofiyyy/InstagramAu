@@ -1,0 +1,2069 @@
+2025-07-04 17:45:30 - root - INFO - Логування налаштовано
+2025-07-04 17:47:32 - root - INFO - Логування налаштовано
+2025-07-04 18:34:17 - root - INFO - Логування налаштовано
+2025-07-04 20:22:05 - root - INFO - Логування налаштовано
+2025-07-04 20:22:06 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 20:22:19 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-04 20:22:19 - root - INFO - Обробка акаунту: alexwent2
+2025-07-04 20:22:19 - root - INFO - Обробка цілі: tomwoker1
+2025-07-04 20:22:19 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 20:22:19 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 20:22:21 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:22:21 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:22:21 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 20:22:21 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:22:22 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 20:22:22 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:22:22 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:22:23 - WDM - INFO - Driver downloading response is 200
+2025-07-04 20:22:24 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:22:24 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 20:22:24 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 20:22:26 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 20:22:36 - root - ERROR - Не знайдено кнопку входу
+2025-07-04 20:22:45 - root - INFO - Пошук сторіс tomwoker1
+2025-07-04 20:22:49 - root - WARNING - Не знайдено активних сторіс для tomwoker1
+2025-07-04 20:22:52 - root - INFO - Пошук сторіс tomwoker1 для відповіді
+2025-07-04 20:22:57 - root - WARNING - Не знайдено активних сторіс для відповіді tomwoker1
+2025-07-04 20:23:30 - root - INFO - Затримка між акаунтами: 115.3 секунд
+2025-07-04 20:23:53 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-04 20:23:53 - root - INFO - Всі драйвери закрито
+2025-07-04 20:30:55 - root - INFO - Логування налаштовано
+2025-07-04 20:30:56 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 20:31:00 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 20:31:00 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 20:31:01 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:31:01 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:31:02 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 20:31:02 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:31:03 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 20:31:03 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:31:03 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:31:03 - WDM - INFO - Driver downloading response is 200
+2025-07-04 20:31:04 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:31:05 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 20:31:05 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 20:31:06 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 20:31:36 - root - INFO - Поточна URL після входу: https://www.instagram.com/
+2025-07-04 20:31:36 - root - WARNING - Виявлено капчу
+2025-07-04 20:31:36 - root - INFO - Оновлено статус alexwent2: login_failed
+2025-07-04 20:31:36 - root - ERROR - Помилка входу для alexwent2
+2025-07-04 20:36:45 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-04 20:36:45 - root - INFO - Всі драйвери закрито
+2025-07-04 20:40:25 - root - INFO - Логування налаштовано
+2025-07-04 20:43:57 - root - INFO - Логування налаштовано
+2025-07-04 20:52:40 - root - INFO - Логування налаштовано
+2025-07-04 20:52:41 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 20:53:31 - root - INFO - Додано акаунт: alexwent2
+2025-07-04 20:53:34 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 20:53:34 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 20:53:35 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:53:36 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:53:36 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 20:53:36 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:53:37 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 20:53:37 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:53:37 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:53:37 - WDM - INFO - Driver downloading response is 200
+2025-07-04 20:53:38 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:53:39 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 20:53:39 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 20:53:41 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 20:53:51 - root - ERROR - Не знайдено поле для введення логіна
+2025-07-04 20:53:54 - root - INFO - Видалено акаунт: alexwent2
+2025-07-04 20:54:41 - root - INFO - Додано акаунт: alexwent2
+2025-07-04 20:54:47 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 20:54:47 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 20:54:48 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:54:49 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:54:49 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 20:54:49 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:54:50 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 20:54:50 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:54:50 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 20:54:50 - WDM - INFO - Driver downloading response is 200
+2025-07-04 20:54:51 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 20:54:52 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 20:54:52 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 20:54:53 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 20:54:59 - root - WARNING - Капча на головній сторінці
+2025-07-04 20:54:59 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-04 20:55:09 - root - INFO - Капча обійдена через повернення назад
+2025-07-04 20:55:15 - root - WARNING - Капча на сторінці входу
+2025-07-04 20:55:15 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-04 20:55:26 - root - INFO - Капча обійдена через повернення назад
+2025-07-04 20:55:26 - root - ERROR - Не знайдено поле для введення логіна
+2025-07-04 20:55:41 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-04 20:55:41 - root - INFO - Обробка акаунту: alexwent2
+2025-07-04 20:55:41 - root - INFO - Обробка цілі: tomwoker1
+2025-07-04 20:55:41 - root - INFO - Перехід на профіль tomwoker1
+2025-07-04 20:55:49 - root - WARNING - Не знайдено постів у tomwoker1
+2025-07-04 20:55:57 - root - INFO - Пошук сторіс tomwoker1
+2025-07-04 20:56:03 - root - WARNING - Не знайдено активних сторіс для tomwoker1
+2025-07-04 20:56:06 - root - INFO - Пошук сторіс tomwoker1 для відповіді
+2025-07-04 20:56:13 - root - WARNING - Не знайдено активних сторіс для відповіді tomwoker1
+2025-07-04 20:56:57 - root - INFO - Затримка між акаунтами: 175.2 секунд
+2025-07-04 20:59:52 - root - INFO - Автоматизація завершена: 0/3 (0.0%)
+2025-07-04 21:00:16 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-04 21:00:16 - root - INFO - Всі драйвери закрито
+2025-07-04 21:07:22 - root - INFO - Логування налаштовано
+2025-07-04 21:07:23 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 21:07:35 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 21:07:35 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 21:07:36 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:07:36 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:07:37 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 21:07:37 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:07:37 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 21:07:37 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 21:07:37 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 21:07:38 - WDM - INFO - Driver downloading response is 200
+2025-07-04 21:07:39 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:07:39 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 21:07:39 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 21:07:42 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 21:07:46 - root - WARNING - Капча на головній сторінці
+2025-07-04 21:07:46 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-04 21:07:57 - root - INFO - Капча обійдена через повернення назад
+2025-07-04 21:08:05 - root - ERROR - Не знайдено поле для введення логіна
+2025-07-04 21:08:07 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-04 21:08:07 - root - INFO - Обробка акаунту: alexwent2
+2025-07-04 21:08:07 - root - INFO - Обробка цілі: tomwoker1
+2025-07-04 21:08:07 - root - ERROR - Драйвер для alexwent2 неактивний
+2025-07-04 21:08:16 - root - INFO - Пошук сторіс tomwoker1
+2025-07-04 21:08:16 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7a3b03+62899]
+	GetHandleVerifier [0x0x7a3b44+62964]
+	(No symbol) [0x0x5d0f50]
+	(No symbol) [0x0x60c938]
+	(No symbol) [0x0x63e3c6]
+	(No symbol) [0x0x639e72]
+	(No symbol) [0x0x639406]
+	(No symbol) [0x0x5a3a05]
+	(No symbol) [0x0x5a3f5e]
+	(No symbol) [0x0x5a43fd]
+	GetHandleVerifier [0x0xa04793+2556483]
+	GetHandleVerifier [0x0x9ffd02+2537394]
+	GetHandleVerifier [0x0x7ca2fa+220586]
+	GetHandleVerifier [0x0x7baae8+157080]
+	GetHandleVerifier [0x0x7c141d+184013]
+	(No symbol) [0x0x5a36d0]
+	(No symbol) [0x0x5a2f47]
+	GetHandleVerifier [0x0xb3aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:08:22 - root - INFO - Пошук сторіс tomwoker1 для відповіді
+2025-07-04 21:08:22 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7a3b03+62899]
+	GetHandleVerifier [0x0x7a3b44+62964]
+	(No symbol) [0x0x5d0f50]
+	(No symbol) [0x0x60c938]
+	(No symbol) [0x0x63e3c6]
+	(No symbol) [0x0x639e72]
+	(No symbol) [0x0x639406]
+	(No symbol) [0x0x5a3a05]
+	(No symbol) [0x0x5a3f5e]
+	(No symbol) [0x0x5a43fd]
+	GetHandleVerifier [0x0xa04793+2556483]
+	GetHandleVerifier [0x0x9ffd02+2537394]
+	GetHandleVerifier [0x0x7ca2fa+220586]
+	GetHandleVerifier [0x0x7baae8+157080]
+	GetHandleVerifier [0x0x7c141d+184013]
+	(No symbol) [0x0x5a36d0]
+	(No symbol) [0x0x5a2f47]
+	GetHandleVerifier [0x0xb3aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:08:37 - root - ERROR - Помилка моніторингу акаунту alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x7a3b03+62899]
+	GetHandleVerifier [0x0x7a3b44+62964]
+	(No symbol) [0x0x5d0f50]
+	(No symbol) [0x0x60c938]
+	(No symbol) [0x0x63e3c6]
+	(No symbol) [0x0x639e72]
+	(No symbol) [0x0x639406]
+	(No symbol) [0x0x5a3a05]
+	(No symbol) [0x0x5a3f5e]
+	(No symbol) [0x0x5a43fd]
+	GetHandleVerifier [0x0xa04793+2556483]
+	GetHandleVerifier [0x0x9ffd02+2537394]
+	GetHandleVerifier [0x0x7ca2fa+220586]
+	GetHandleVerifier [0x0x7baae8+157080]
+	GetHandleVerifier [0x0x7c141d+184013]
+	(No symbol) [0x0x5a36d0]
+	(No symbol) [0x0x5a2f47]
+	GetHandleVerifier [0x0xb3aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:08:37 - root - INFO - Затримка між акаунтами: 162.8 секунд
+2025-07-04 21:08:46 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-04 21:08:46 - root - INFO - Всі драйвери закрито
+2025-07-04 21:08:47 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-04 21:08:47 - root - INFO - Обробка акаунту: alexwent2
+2025-07-04 21:08:47 - root - INFO - Обробка цілі: tomwoker1
+2025-07-04 21:08:47 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-04 21:08:57 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-04 21:09:03 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-04 21:09:32 - root - INFO - Затримка між акаунтами: 83.0 секунд
+2025-07-04 21:09:36 - root - INFO - Всі драйвери закрито
+2025-07-04 21:10:09 - root - INFO - Логування налаштовано
+2025-07-04 21:10:10 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 21:10:15 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-04 21:10:15 - WDM - INFO - ====== WebDriver manager ======
+2025-07-04 21:10:16 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:10:17 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:10:17 - WDM - INFO - There is no [win64] chromedriver "137.0.7151.119" for browser google-chrome "137.0.7151" in cache
+2025-07-04 21:10:17 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:10:18 - WDM - INFO - WebDriver version 137.0.7151.119 selected
+2025-07-04 21:10:18 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 21:10:18 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.119/win32/chromedriver-win32.zip
+2025-07-04 21:10:18 - WDM - INFO - Driver downloading response is 200
+2025-07-04 21:10:19 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-04 21:10:20 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119]
+2025-07-04 21:10:20 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\137.0.7151.119\chromedriver-win32\chromedriver.exe
+2025-07-04 21:10:21 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-04 21:10:27 - root - WARNING - Капча на головній сторінці
+2025-07-04 21:10:27 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-04 21:10:38 - root - INFO - Капча обійдена через повернення назад
+2025-07-04 21:10:38 - root - ERROR - Помилка завантаження сторінки входу: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:10:52 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-04 21:10:52 - root - INFO - Обробка акаунту: alexwent2
+2025-07-04 21:10:52 - root - INFO - Обробка цілі: tomwoker1
+2025-07-04 21:10:52 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:10:52 - root - INFO - Перехід на профіль tomwoker1
+2025-07-04 21:10:52 - root - ERROR - Помилка переходу на профіль: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:10:59 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:10:59 - root - INFO - Пошук сторіс tomwoker1
+2025-07-04 21:10:59 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:11:04 - root - INFO - Пошук сторіс tomwoker1 для відповіді
+2025-07-04 21:11:04 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:11:33 - root - ERROR - Помилка моніторингу акаунту alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x9f3b03+62899]
+	GetHandleVerifier [0x0x9f3b44+62964]
+	(No symbol) [0x0x820f50]
+	(No symbol) [0x0x85c938]
+	(No symbol) [0x0x88e3c6]
+	(No symbol) [0x0x889e72]
+	(No symbol) [0x0x889406]
+	(No symbol) [0x0x7f3a05]
+	(No symbol) [0x0x7f3f5e]
+	(No symbol) [0x0x7f43fd]
+	GetHandleVerifier [0x0xc54793+2556483]
+	GetHandleVerifier [0x0xc4fd02+2537394]
+	GetHandleVerifier [0x0xa1a2fa+220586]
+	GetHandleVerifier [0x0xa0aae8+157080]
+	GetHandleVerifier [0x0xa1141d+184013]
+	(No symbol) [0x0x7f36d0]
+	(No symbol) [0x0x7f2f47]
+	GetHandleVerifier [0x0xd8aa2c+3826908]
+	BaseThreadInitThunk [0x0x75b6fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x776e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x776e827e+238]
+
+2025-07-04 21:11:33 - root - INFO - Затримка між акаунтами: 71.9 секунд
+2025-07-04 21:12:45 - root - INFO - Автоматизація завершена: 0/3 (0.0%)
+2025-07-04 21:17:17 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-04 21:17:17 - root - INFO - Всі драйвери закрито
+2025-07-04 21:17:28 - root - INFO - Логування налаштовано
+2025-07-04 21:17:28 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 21:19:55 - root - INFO - ⚡ Всі драйвери закрито
+2025-07-04 21:32:38 - root - INFO - Логування налаштовано
+2025-07-04 21:32:39 - root - INFO - Завантажено 1 акаунтів
+2025-07-04 21:32:56 - root - INFO - Всі драйвери закрито
+2025-07-05 10:41:30,909 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 10:41:32,474 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 10:41:34,215 - root - ERROR - Помилка створення драйвера для alexwent2: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: mobileEmulation
+Stacktrace:
+	GetHandleVerifier [0x0xb24553+62419]
+	GetHandleVerifier [0x0xb24594+62484]
+	(No symbol) [0x0x962133]
+	(No symbol) [0x0x989723]
+	(No symbol) [0x0x98aeb0]
+	(No symbol) [0x0x985fea]
+	(No symbol) [0x0x9d9832]
+	(No symbol) [0x0x9d931c]
+	(No symbol) [0x0x9daa20]
+	(No symbol) [0x0x9da82a]
+	(No symbol) [0x0x9cf266]
+	(No symbol) [0x0x99e852]
+	(No symbol) [0x0x99f6f4]
+	GetHandleVerifier [0x0xd94833+2619059]
+	GetHandleVerifier [0x0xd8fc4a+2599626]
+	GetHandleVerifier [0x0xb4b0fa+221050]
+	GetHandleVerifier [0x0xb3b378+156152]
+	GetHandleVerifier [0x0xb41d2d+183213]
+	GetHandleVerifier [0x0xb2c438+94904]
+	GetHandleVerifier [0x0xb2c5c2+95298]
+	GetHandleVerifier [0x0xb1771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:41:34,217 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: mobileEmulation
+Stacktrace:
+	GetHandleVerifier [0x0xb24553+62419]
+	GetHandleVerifier [0x0xb24594+62484]
+	(No symbol) [0x0x962133]
+	(No symbol) [0x0x989723]
+	(No symbol) [0x0x98aeb0]
+	(No symbol) [0x0x985fea]
+	(No symbol) [0x0x9d9832]
+	(No symbol) [0x0x9d931c]
+	(No symbol) [0x0x9daa20]
+	(No symbol) [0x0x9da82a]
+	(No symbol) [0x0x9cf266]
+	(No symbol) [0x0x99e852]
+	(No symbol) [0x0x99f6f4]
+	GetHandleVerifier [0x0xd94833+2619059]
+	GetHandleVerifier [0x0xd8fc4a+2599626]
+	GetHandleVerifier [0x0xb4b0fa+221050]
+	GetHandleVerifier [0x0xb3b378+156152]
+	GetHandleVerifier [0x0xb41d2d+183213]
+	GetHandleVerifier [0x0xb2c438+94904]
+	GetHandleVerifier [0x0xb2c5c2+95298]
+	GetHandleVerifier [0x0xb1771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:42:26,893 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:42:26,893 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:42:26,893 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:42:26,893 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:42:55,469 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:42:55,469 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:42:55,469 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:42:55,469 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:43:42,569 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:43:42,569 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:43:42,569 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:43:42,569 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:43:44,278 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:43:44,278 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:43:44,278 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:43:44,278 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:45:54,894 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:45:54,954 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:47:49,434 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:47:49,434 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 10:47:49,434 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 10:47:49,434 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 10:47:50,975 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 10:47:52,679 - root - ERROR - Помилка створення драйвера для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50582
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x1164553+62419]
+	GetHandleVerifier [0x0x1164594+62484]
+	(No symbol) [0x0xfa2133]
+	(No symbol) [0x0xfdbfab]
+	(No symbol) [0x0xfdafc9]
+	(No symbol) [0x0xfd132f]
+	(No symbol) [0x0xfd1166]
+	(No symbol) [0x0x101af3e]
+	(No symbol) [0x0x101a82a]
+	(No symbol) [0x0x100f266]
+	(No symbol) [0x0xfde852]
+	(No symbol) [0x0xfdf6f4]
+	GetHandleVerifier [0x0x13d4833+2619059]
+	GetHandleVerifier [0x0x13cfc4a+2599626]
+	GetHandleVerifier [0x0x118b0fa+221050]
+	GetHandleVerifier [0x0x117b378+156152]
+	GetHandleVerifier [0x0x1181d2d+183213]
+	GetHandleVerifier [0x0x116c438+94904]
+	GetHandleVerifier [0x0x116c5c2+95298]
+	GetHandleVerifier [0x0x115771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:47:52,679 - root - ERROR - Критична помилка входу для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50582
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x1164553+62419]
+	GetHandleVerifier [0x0x1164594+62484]
+	(No symbol) [0x0xfa2133]
+	(No symbol) [0x0xfdbfab]
+	(No symbol) [0x0xfdafc9]
+	(No symbol) [0x0xfd132f]
+	(No symbol) [0x0xfd1166]
+	(No symbol) [0x0x101af3e]
+	(No symbol) [0x0x101a82a]
+	(No symbol) [0x0x100f266]
+	(No symbol) [0x0xfde852]
+	(No symbol) [0x0xfdf6f4]
+	GetHandleVerifier [0x0x13d4833+2619059]
+	GetHandleVerifier [0x0x13cfc4a+2599626]
+	GetHandleVerifier [0x0x118b0fa+221050]
+	GetHandleVerifier [0x0x117b378+156152]
+	GetHandleVerifier [0x0x1181d2d+183213]
+	GetHandleVerifier [0x0x116c438+94904]
+	GetHandleVerifier [0x0x116c5c2+95298]
+	GetHandleVerifier [0x0x115771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:48:00,716 - root - WARNING - Акаунт alexwent2 недоступний
+2025-07-05 10:48:09,919 - root - INFO - ⏱️ Пауза 31.5с між цілями
+2025-07-05 10:48:26,143 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:51:32,588 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 10:51:34,282 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 10:51:35,999 - root - ERROR - Помилка створення драйвера для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50647
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x6a4553+62419]
+	GetHandleVerifier [0x0x6a4594+62484]
+	(No symbol) [0x0x4e2133]
+	(No symbol) [0x0x51bfab]
+	(No symbol) [0x0x51afc9]
+	(No symbol) [0x0x51132f]
+	(No symbol) [0x0x511166]
+	(No symbol) [0x0x55af3e]
+	(No symbol) [0x0x55a82a]
+	(No symbol) [0x0x54f266]
+	(No symbol) [0x0x51e852]
+	(No symbol) [0x0x51f6f4]
+	GetHandleVerifier [0x0x914833+2619059]
+	GetHandleVerifier [0x0x90fc4a+2599626]
+	GetHandleVerifier [0x0x6cb0fa+221050]
+	GetHandleVerifier [0x0x6bb378+156152]
+	GetHandleVerifier [0x0x6c1d2d+183213]
+	GetHandleVerifier [0x0x6ac438+94904]
+	GetHandleVerifier [0x0x6ac5c2+95298]
+	GetHandleVerifier [0x0x69771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:51:36,000 - root - ERROR - Критична помилка входу для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50647
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x6a4553+62419]
+	GetHandleVerifier [0x0x6a4594+62484]
+	(No symbol) [0x0x4e2133]
+	(No symbol) [0x0x51bfab]
+	(No symbol) [0x0x51afc9]
+	(No symbol) [0x0x51132f]
+	(No symbol) [0x0x511166]
+	(No symbol) [0x0x55af3e]
+	(No symbol) [0x0x55a82a]
+	(No symbol) [0x0x54f266]
+	(No symbol) [0x0x51e852]
+	(No symbol) [0x0x51f6f4]
+	GetHandleVerifier [0x0x914833+2619059]
+	GetHandleVerifier [0x0x90fc4a+2599626]
+	GetHandleVerifier [0x0x6cb0fa+221050]
+	GetHandleVerifier [0x0x6bb378+156152]
+	GetHandleVerifier [0x0x6c1d2d+183213]
+	GetHandleVerifier [0x0x6ac438+94904]
+	GetHandleVerifier [0x0x6ac5c2+95298]
+	GetHandleVerifier [0x0x69771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:51:40,876 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:51:40,877 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:51:40,877 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:51:40,877 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:52:28,769 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:52:28,836 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:54:57,840 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 10:54:59,407 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 10:55:02,031 - root - ERROR - Помилка створення драйвера для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50691
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x2e4553+62419]
+	GetHandleVerifier [0x0x2e4594+62484]
+	(No symbol) [0x0x122133]
+	(No symbol) [0x0x15bfab]
+	(No symbol) [0x0x15afc9]
+	(No symbol) [0x0x15132f]
+	(No symbol) [0x0x151166]
+	(No symbol) [0x0x19af3e]
+	(No symbol) [0x0x19a82a]
+	(No symbol) [0x0x18f266]
+	(No symbol) [0x0x15e852]
+	(No symbol) [0x0x15f6f4]
+	GetHandleVerifier [0x0x554833+2619059]
+	GetHandleVerifier [0x0x54fc4a+2599626]
+	GetHandleVerifier [0x0x30b0fa+221050]
+	GetHandleVerifier [0x0x2fb378+156152]
+	GetHandleVerifier [0x0x301d2d+183213]
+	GetHandleVerifier [0x0x2ec438+94904]
+	GetHandleVerifier [0x0x2ec5c2+95298]
+	GetHandleVerifier [0x0x2d771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+	(No symbol) [0x0]
+
+2025-07-05 10:55:02,033 - root - ERROR - Критична помилка входу для alexwent2: Message: session not created: cannot connect to chrome at 127.0.0.1:50691
+from session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 137.0.7151.120
+Stacktrace:
+	GetHandleVerifier [0x0x2e4553+62419]
+	GetHandleVerifier [0x0x2e4594+62484]
+	(No symbol) [0x0x122133]
+	(No symbol) [0x0x15bfab]
+	(No symbol) [0x0x15afc9]
+	(No symbol) [0x0x15132f]
+	(No symbol) [0x0x151166]
+	(No symbol) [0x0x19af3e]
+	(No symbol) [0x0x19a82a]
+	(No symbol) [0x0x18f266]
+	(No symbol) [0x0x15e852]
+	(No symbol) [0x0x15f6f4]
+	GetHandleVerifier [0x0x554833+2619059]
+	GetHandleVerifier [0x0x54fc4a+2599626]
+	GetHandleVerifier [0x0x30b0fa+221050]
+	GetHandleVerifier [0x0x2fb378+156152]
+	GetHandleVerifier [0x0x301d2d+183213]
+	GetHandleVerifier [0x0x2ec438+94904]
+	GetHandleVerifier [0x0x2ec5c2+95298]
+	GetHandleVerifier [0x0x2d771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+	(No symbol) [0x0]
+
+2025-07-05 10:55:04,820 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:55:04,820 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:55:04,820 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:55:04,821 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:56:23,991 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 10:56:25,517 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 10:57:42,466 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xeb4553+62419]
+	GetHandleVerifier [0x0xeb4594+62484]
+	(No symbol) [0x0xcf1f90]
+	(No symbol) [0x0xd2db48]
+	(No symbol) [0x0xd5f326]
+	(No symbol) [0x0xd5af15]
+	(No symbol) [0x0xd5a496]
+	(No symbol) [0x0xcc3a45]
+	(No symbol) [0x0xcc3f9e]
+	(No symbol) [0x0xcc442d]
+	GetHandleVerifier [0x0x1124833+2619059]
+	GetHandleVerifier [0x0x111fc4a+2599626]
+	GetHandleVerifier [0x0xedb0fa+221050]
+	GetHandleVerifier [0x0xecb378+156152]
+	GetHandleVerifier [0x0xed1d2d+183213]
+	(No symbol) [0x0xcc3710]
+	(No symbol) [0x0xcc2f1d]
+	GetHandleVerifier [0x0x1258b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 10:57:42,564 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 10:57:44,243 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:57:44,243 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:57:44,244 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:57:44,244 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:57:49,021 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 10:57:49,021 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 10:57:49,022 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 10:57:49,022 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:58:53,161 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 10:58:53,265 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:00:00,980 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:00:02,517 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:00:34,389 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:00:34,389 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:00:34,390 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:00:34,390 - root - INFO - 🔍 Лайк постів tomwoker1 від alexwent2
+2025-07-05 11:00:37,079 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C56590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:00:38,448 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C54510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:00:41,165 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C57090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:00:42,526 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C57C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:00:45,220 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C648D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:00:46,595 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C65410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:00:50,680 - root - ERROR - Помилка навігації до профілю tomwoker1: HTTPConnectionPool(host='localhost', port=50859): Max retries exceeded with url: /session/bd2d04f91715455432261d8867401514/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C66A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-05 11:00:53,379 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-07-05 11:00:53,379 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C677D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:00:57,460 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C78410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:00:59,845 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:01:01,522 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C78DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:03,918 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C79C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:01:08,003 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C67110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:01:09,701 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C65790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:12,067 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C65050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/url
+2025-07-05 11:01:13,765 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A5C2F88D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:16,129 - root - ERROR - Помилка перегляду сторіс tomwoker1: HTTPConnectionPool(host='localhost', port=50859): Max retries exceeded with url: /session/bd2d04f91715455432261d8867401514/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C56310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-07-05 11:01:17,832 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-07-05 11:01:17,832 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C54610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:17,930 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:01:17,930 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:01:20,585 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:01:20,585 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:01:20,585 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:01:20,585 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:01:22,179 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:01:25,331 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-07-05 11:01:25,999 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C67010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:26,034 - root - INFO - ⏱️ Пауза 34.1с між цілями
+2025-07-05 11:01:30,097 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C7AED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:34,161 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68C7BFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:42,302 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC5290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:46,333 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC6490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:50,420 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC6E90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:01:58,545 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC77D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:02:00,092 - root - INFO - ⏱️ Пауза 2.2 хв між акаунтами
+2025-07-05 11:02:02,634 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CD0A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:02:06,717 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CD1490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:02:12,418 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x10d4553+62419]
+	GetHandleVerifier [0x0x10d4594+62484]
+	(No symbol) [0x0xf11f90]
+	(No symbol) [0x0xf4db48]
+	(No symbol) [0x0xf7f326]
+	(No symbol) [0x0xf7af15]
+	(No symbol) [0x0xf7a496]
+	(No symbol) [0x0xee3a45]
+	(No symbol) [0x0xee3f9e]
+	(No symbol) [0x0xee442d]
+	GetHandleVerifier [0x0x1344833+2619059]
+	GetHandleVerifier [0x0x133fc4a+2599626]
+	GetHandleVerifier [0x0x10fb0fa+221050]
+	GetHandleVerifier [0x0x10eb378+156152]
+	GetHandleVerifier [0x0x10f1d2d+183213]
+	(No symbol) [0x0xee3710]
+	(No symbol) [0x0xee2f1d]
+	GetHandleVerifier [0x0x1478b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:02:14,815 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC7110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:02:18,880 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC5950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:02:22,282 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:02:22,283 - root - ERROR - Помилка перегляду сторіс tomwoker1: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x10d4553+62419]
+	GetHandleVerifier [0x0x10d4594+62484]
+	(No symbol) [0x0xf11f90]
+	(No symbol) [0x0xf4db48]
+	(No symbol) [0x0xf7f326]
+	(No symbol) [0x0xf7af15]
+	(No symbol) [0x0xf7a496]
+	(No symbol) [0x0xee3a45]
+	(No symbol) [0x0xee3f9e]
+	(No symbol) [0x0xee442d]
+	GetHandleVerifier [0x0x1344833+2619059]
+	GetHandleVerifier [0x0x133fc4a+2599626]
+	GetHandleVerifier [0x0x10fb0fa+221050]
+	GetHandleVerifier [0x0x10eb378+156152]
+	GetHandleVerifier [0x0x10f1d2d+183213]
+	(No symbol) [0x0xee3710]
+	(No symbol) [0x0xee2f1d]
+	GetHandleVerifier [0x0x1478b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:02:22,948 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020A68CC4B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bd2d04f91715455432261d8867401514/element
+2025-07-05 11:04:52,900 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:04:52,900 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:04:52,900 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:04:52,900 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:04:54,461 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:05:33,437 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x564553+62419]
+	GetHandleVerifier [0x0x564594+62484]
+	(No symbol) [0x0x3a1f90]
+	(No symbol) [0x0x3ddb48]
+	(No symbol) [0x0x40f326]
+	(No symbol) [0x0x40af15]
+	(No symbol) [0x0x40a496]
+	(No symbol) [0x0x373a45]
+	(No symbol) [0x0x373f9e]
+	(No symbol) [0x0x37442d]
+	GetHandleVerifier [0x0x7d4833+2619059]
+	GetHandleVerifier [0x0x7cfc4a+2599626]
+	GetHandleVerifier [0x0x58b0fa+221050]
+	GetHandleVerifier [0x0x57b378+156152]
+	GetHandleVerifier [0x0x581d2d+183213]
+	(No symbol) [0x0x373710]
+	(No symbol) [0x0x372f1d]
+	GetHandleVerifier [0x0x908b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:05:44,163 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:05:44,164 - root - ERROR - Помилка перегляду сторіс tomwoker1: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x564553+62419]
+	GetHandleVerifier [0x0x564594+62484]
+	(No symbol) [0x0x3a1f90]
+	(No symbol) [0x0x3ddb48]
+	(No symbol) [0x0x40f326]
+	(No symbol) [0x0x40af15]
+	(No symbol) [0x0x40a496]
+	(No symbol) [0x0x373a45]
+	(No symbol) [0x0x373f9e]
+	(No symbol) [0x0x37442d]
+	GetHandleVerifier [0x0x7d4833+2619059]
+	GetHandleVerifier [0x0x7cfc4a+2599626]
+	GetHandleVerifier [0x0x58b0fa+221050]
+	GetHandleVerifier [0x0x57b378+156152]
+	GetHandleVerifier [0x0x581d2d+183213]
+	(No symbol) [0x0x373710]
+	(No symbol) [0x0x372f1d]
+	GetHandleVerifier [0x0x908b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:05:56,494 - root - ERROR - ❌ Помилка обробки цілі tomwoker1: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x564553+62419]
+	GetHandleVerifier [0x0x564594+62484]
+	(No symbol) [0x0x3a1f90]
+	(No symbol) [0x0x3ddb48]
+	(No symbol) [0x0x40f326]
+	(No symbol) [0x0x40af15]
+	(No symbol) [0x0x40a496]
+	(No symbol) [0x0x373a45]
+	(No symbol) [0x0x373f9e]
+	(No symbol) [0x0x37442d]
+	GetHandleVerifier [0x0x7d4833+2619059]
+	GetHandleVerifier [0x0x7cfc4a+2599626]
+	GetHandleVerifier [0x0x58b0fa+221050]
+	GetHandleVerifier [0x0x57b378+156152]
+	GetHandleVerifier [0x0x581d2d+183213]
+	(No symbol) [0x0x373710]
+	(No symbol) [0x0x372f1d]
+	GetHandleVerifier [0x0x908b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:05:56,498 - root - INFO - ⏱️ Пауза 3.6 хв між акаунтами
+2025-07-05 11:06:27,942 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:06:27,942 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:07:13,082 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:09:52,532 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:09:52,533 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:09:52,533 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:09:52,534 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:09:54,084 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:11:17,106 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xa84553+62419]
+	GetHandleVerifier [0x0xa84594+62484]
+	(No symbol) [0x0x8c1f90]
+	(No symbol) [0x0x8fdb48]
+	(No symbol) [0x0x92f326]
+	(No symbol) [0x0x92af15]
+	(No symbol) [0x0x92a496]
+	(No symbol) [0x0x893a45]
+	(No symbol) [0x0x893f9e]
+	(No symbol) [0x0x89442d]
+	GetHandleVerifier [0x0xcf4833+2619059]
+	GetHandleVerifier [0x0xcefc4a+2599626]
+	GetHandleVerifier [0x0xaab0fa+221050]
+	GetHandleVerifier [0x0xa9b378+156152]
+	GetHandleVerifier [0x0xaa1d2d+183213]
+	(No symbol) [0x0x893710]
+	(No symbol) [0x0x892f1d]
+	GetHandleVerifier [0x0xe28b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:11:21,135 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:11:21,135 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:11:23,824 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:11:23,824 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:11:23,824 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:11:23,824 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:11:32,060 - root - WARNING - Акаунт alexwent2 недоступний
+2025-07-05 11:11:32,342 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:11:32,342 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:11:32,342 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:11:32,342 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:11:36,801 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:11:36,801 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:11:36,801 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:11:36,801 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:12:10,624 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:12:12,176 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:12:23,136 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xe84553+62419]
+	GetHandleVerifier [0x0xe84594+62484]
+	(No symbol) [0x0xcc1f90]
+	(No symbol) [0x0xcfdb48]
+	(No symbol) [0x0xd2f326]
+	(No symbol) [0x0xd2af15]
+	(No symbol) [0x0xd2a496]
+	(No symbol) [0x0xc93a45]
+	(No symbol) [0x0xc93f9e]
+	(No symbol) [0x0xc9442d]
+	GetHandleVerifier [0x0x10f4833+2619059]
+	GetHandleVerifier [0x0x10efc4a+2599626]
+	GetHandleVerifier [0x0xeab0fa+221050]
+	GetHandleVerifier [0x0xe9b378+156152]
+	GetHandleVerifier [0x0xea1d2d+183213]
+	(No symbol) [0x0xc93710]
+	(No symbol) [0x0xc92f1d]
+	GetHandleVerifier [0x0x1228b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:12:23,326 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:12:25,844 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:12:25,844 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:12:25,844 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:12:25,844 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:12:28,114 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:12:28,114 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:12:28,115 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:12:28,115 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:13:03,832 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:13:03,922 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:15:06,201 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:15:06,201 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:15:06,201 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:15:06,201 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:15:07,716 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:17:03,829 - root - ERROR - Критична помилка входу для alexwent2: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x1064553+62419]
+	GetHandleVerifier [0x0x1064594+62484]
+	(No symbol) [0x0xea2133]
+	(No symbol) [0x0xeea8fe]
+	(No symbol) [0x0xeeac9b]
+	(No symbol) [0x0xf33052]
+	(No symbol) [0x0xf0f4b4]
+	(No symbol) [0x0xf3087a]
+	(No symbol) [0x0xf0f266]
+	(No symbol) [0x0xede852]
+	(No symbol) [0x0xedf6f4]
+	GetHandleVerifier [0x0x12d4833+2619059]
+	GetHandleVerifier [0x0x12cfc4a+2599626]
+	GetHandleVerifier [0x0x108b0fa+221050]
+	GetHandleVerifier [0x0x107b378+156152]
+	GetHandleVerifier [0x0x1081d2d+183213]
+	GetHandleVerifier [0x0x106c438+94904]
+	GetHandleVerifier [0x0x106c5c2+95298]
+	GetHandleVerifier [0x0x105771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:17:16,154 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:18:15,904 - root - INFO - Сторіс tomwoker1 не знайдено
+2025-07-05 11:18:17,961 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:18:17,961 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:24:40,170 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:24:40,170 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:24:40,171 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:24:40,171 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:24:41,687 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:25:21,031 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xeb4553+62419]
+	GetHandleVerifier [0x0xeb4594+62484]
+	(No symbol) [0x0xcf1f90]
+	(No symbol) [0x0xd2db48]
+	(No symbol) [0x0xd5f326]
+	(No symbol) [0x0xd5af15]
+	(No symbol) [0x0xd5a496]
+	(No symbol) [0x0xcc3a45]
+	(No symbol) [0x0xcc3f9e]
+	(No symbol) [0x0xcc442d]
+	GetHandleVerifier [0x0x1124833+2619059]
+	GetHandleVerifier [0x0x111fc4a+2599626]
+	GetHandleVerifier [0x0xedb0fa+221050]
+	GetHandleVerifier [0x0xecb378+156152]
+	GetHandleVerifier [0x0xed1d2d+183213]
+	(No symbol) [0x0xcc3710]
+	(No symbol) [0x0xcc2f1d]
+	GetHandleVerifier [0x0x1258b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:25:32,397 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:25:32,397 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:25:33,065 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:25:33,065 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:25:33,066 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:25:33,066 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:25:34,951 - root - WARNING - Акаунт alexwent2 недоступний
+2025-07-05 11:25:35,200 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:25:35,200 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:25:35,200 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:25:35,200 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:25:39,353 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:25:39,353 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:25:39,353 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:25:39,353 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:25:42,394 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:35:53,246 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:35:53,246 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:35:53,246 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:35:53,246 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:35:54,777 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:35:56,613 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:37:01,068 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:37:01,070 - root - WARNING - Помилка пошуку кнопки входу: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xbf4553+62419]
+	GetHandleVerifier [0x0xbf4594+62484]
+	(No symbol) [0x0xa31f90]
+	(No symbol) [0x0xa6db48]
+	(No symbol) [0x0xa9f326]
+	(No symbol) [0x0xa9af15]
+	(No symbol) [0x0xa9a496]
+	(No symbol) [0x0xa03a45]
+	(No symbol) [0x0xa03f9e]
+	(No symbol) [0x0xa0442d]
+	GetHandleVerifier [0x0xe64833+2619059]
+	GetHandleVerifier [0x0xe5fc4a+2599626]
+	GetHandleVerifier [0x0xc1b0fa+221050]
+	GetHandleVerifier [0x0xc0b378+156152]
+	GetHandleVerifier [0x0xc11d2d+183213]
+	(No symbol) [0x0xa03710]
+	(No symbol) [0x0xa02f1d]
+	GetHandleVerifier [0x0xf98b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:37:01,072 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0xbf4553+62419]
+	GetHandleVerifier [0x0xbf4594+62484]
+	(No symbol) [0x0xa31f90]
+	(No symbol) [0x0xa6db48]
+	(No symbol) [0x0xa9f326]
+	(No symbol) [0x0xa9af15]
+	(No symbol) [0x0xa9a496]
+	(No symbol) [0x0xa03a45]
+	(No symbol) [0x0xa03f9e]
+	(No symbol) [0x0xa0442d]
+	GetHandleVerifier [0x0xe64833+2619059]
+	GetHandleVerifier [0x0xe5fc4a+2599626]
+	GetHandleVerifier [0x0xc1b0fa+221050]
+	GetHandleVerifier [0x0xc0b378+156152]
+	GetHandleVerifier [0x0xc11d2d+183213]
+	(No symbol) [0x0xa03710]
+	(No symbol) [0x0xa02f1d]
+	GetHandleVerifier [0x0xf98b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:38:10,665 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:38:10,665 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:38:10,665 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:38:10,665 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:38:12,198 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:38:14,068 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:38:44,485 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:38:44,486 - root - WARNING - Помилка пошуку кнопки входу: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x734553+62419]
+	GetHandleVerifier [0x0x734594+62484]
+	(No symbol) [0x0x571f90]
+	(No symbol) [0x0x5adb48]
+	(No symbol) [0x0x5df326]
+	(No symbol) [0x0x5daf15]
+	(No symbol) [0x0x5da496]
+	(No symbol) [0x0x543a45]
+	(No symbol) [0x0x543f9e]
+	(No symbol) [0x0x54442d]
+	GetHandleVerifier [0x0x9a4833+2619059]
+	GetHandleVerifier [0x0x99fc4a+2599626]
+	GetHandleVerifier [0x0x75b0fa+221050]
+	GetHandleVerifier [0x0x74b378+156152]
+	GetHandleVerifier [0x0x751d2d+183213]
+	(No symbol) [0x0x543710]
+	(No symbol) [0x0x542f1d]
+	GetHandleVerifier [0x0xad8b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:38:44,489 - root - ERROR - Критична помилка входу для alexwent2: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x734553+62419]
+	GetHandleVerifier [0x0x734594+62484]
+	(No symbol) [0x0x571f90]
+	(No symbol) [0x0x5adb48]
+	(No symbol) [0x0x5df326]
+	(No symbol) [0x0x5daf15]
+	(No symbol) [0x0x5da496]
+	(No symbol) [0x0x543a45]
+	(No symbol) [0x0x543f9e]
+	(No symbol) [0x0x54442d]
+	GetHandleVerifier [0x0x9a4833+2619059]
+	GetHandleVerifier [0x0x99fc4a+2599626]
+	GetHandleVerifier [0x0x75b0fa+221050]
+	GetHandleVerifier [0x0x74b378+156152]
+	GetHandleVerifier [0x0x751d2d+183213]
+	(No symbol) [0x0x543710]
+	(No symbol) [0x0x542f1d]
+	GetHandleVerifier [0x0xad8b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:38:58,748 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:38:58,749 - root - ERROR - Помилка перегляду сторіс tomwoker1: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x734553+62419]
+	GetHandleVerifier [0x0x734594+62484]
+	(No symbol) [0x0x571f90]
+	(No symbol) [0x0x5adb48]
+	(No symbol) [0x0x5df326]
+	(No symbol) [0x0x5daf15]
+	(No symbol) [0x0x5da496]
+	(No symbol) [0x0x543a45]
+	(No symbol) [0x0x543f9e]
+	(No symbol) [0x0x54442d]
+	GetHandleVerifier [0x0x9a4833+2619059]
+	GetHandleVerifier [0x0x99fc4a+2599626]
+	GetHandleVerifier [0x0x75b0fa+221050]
+	GetHandleVerifier [0x0x74b378+156152]
+	GetHandleVerifier [0x0x751d2d+183213]
+	(No symbol) [0x0x543710]
+	(No symbol) [0x0x542f1d]
+	GetHandleVerifier [0x0xad8b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:39:11,799 - root - ERROR - ❌ Помилка обробки цілі tomwoker1: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0x734553+62419]
+	GetHandleVerifier [0x0x734594+62484]
+	(No symbol) [0x0x571f90]
+	(No symbol) [0x0x5adb48]
+	(No symbol) [0x0x5df326]
+	(No symbol) [0x0x5daf15]
+	(No symbol) [0x0x5da496]
+	(No symbol) [0x0x543a45]
+	(No symbol) [0x0x543f9e]
+	(No symbol) [0x0x54442d]
+	GetHandleVerifier [0x0x9a4833+2619059]
+	GetHandleVerifier [0x0x99fc4a+2599626]
+	GetHandleVerifier [0x0x75b0fa+221050]
+	GetHandleVerifier [0x0x74b378+156152]
+	GetHandleVerifier [0x0x751d2d+183213]
+	(No symbol) [0x0x543710]
+	(No symbol) [0x0x542f1d]
+	GetHandleVerifier [0x0xad8b8c+3881484]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:39:11,803 - root - INFO - ⏱️ Пауза 3.2 хв між акаунтами
+2025-07-05 11:39:26,361 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:39:26,361 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:43:34,032 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:43:34,032 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:43:34,032 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:43:34,032 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:43:35,566 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:43:37,449 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:45:49,853 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:45:56,615 - root - INFO - Введення логіна...
+2025-07-05 11:46:00,188 - root - INFO - Введення пароля...
+2025-07-05 11:46:06,943 - root - ERROR - Кнопка входу не знайдена для alexwent2
+2025-07-05 11:46:17,124 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:46:49,071 - root - INFO - Сторіс tomwoker1 не знайдено
+2025-07-05 11:46:59,055 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:46:59,055 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:47:03,862 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:47:03,862 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:47:03,862 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:47:03,862 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:47:04,014 - root - INFO - ⏱️ Пауза 16.2с між цілями
+2025-07-05 11:47:05,407 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:47:07,263 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:47:20,178 - root - INFO - ⏱️ Пауза 2.2 хв між акаунтами
+2025-07-05 11:51:29,379 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:51:29,379 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:51:29,379 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:51:29,379 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:51:30,928 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:51:32,729 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:52:01,392 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:52:01,394 - root - WARNING - Помилка пошуку кнопки входу: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x1064553+62419]
+	GetHandleVerifier [0x0x1064594+62484]
+	(No symbol) [0x0xea2133]
+	(No symbol) [0x0xe80fd9]
+	(No symbol) [0x0xf15b9e]
+	(No symbol) [0x0xf30159]
+	(No symbol) [0x0xf0f266]
+	(No symbol) [0x0xede852]
+	(No symbol) [0x0xedf6f4]
+	GetHandleVerifier [0x0x12d4833+2619059]
+	GetHandleVerifier [0x0x12cfc4a+2599626]
+	GetHandleVerifier [0x0x108b0fa+221050]
+	GetHandleVerifier [0x0x107b378+156152]
+	GetHandleVerifier [0x0x1081d2d+183213]
+	GetHandleVerifier [0x0x106c438+94904]
+	GetHandleVerifier [0x0x106c5c2+95298]
+	GetHandleVerifier [0x0x105771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:52:01,397 - root - ERROR - Критична помилка входу для alexwent2: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x1064553+62419]
+	GetHandleVerifier [0x0x1064594+62484]
+	(No symbol) [0x0xea2133]
+	(No symbol) [0x0xe80fd9]
+	(No symbol) [0x0xf15b9e]
+	(No symbol) [0x0xf30159]
+	(No symbol) [0x0xf0f266]
+	(No symbol) [0x0xede852]
+	(No symbol) [0x0xedf6f4]
+	GetHandleVerifier [0x0x12d4833+2619059]
+	GetHandleVerifier [0x0x12cfc4a+2599626]
+	GetHandleVerifier [0x0x108b0fa+221050]
+	GetHandleVerifier [0x0x107b378+156152]
+	GetHandleVerifier [0x0x1081d2d+183213]
+	GetHandleVerifier [0x0x106c438+94904]
+	GetHandleVerifier [0x0x106c5c2+95298]
+	GetHandleVerifier [0x0x105771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 11:52:07,014 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:52:07,014 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:52:07,968 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:52:07,968 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:52:07,968 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:52:07,969 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:52:10,255 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:52:10,255 - root - WARNING - ⚠️ Акаунт alexwent2 недоступний, пропускаємо
+2025-07-05 11:52:10,255 - root - INFO - ✅ Автоматизація завершена: 0/0 (0.0%)
+2025-07-05 11:52:10,255 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:52:11,173 - root - WARNING - Акаунт alexwent2 недоступний
+2025-07-05 11:52:14,725 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:52:44,793 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:52:44,794 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:52:44,795 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:52:44,795 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:52:46,364 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:52:48,266 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:55:05,249 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:55:13,690 - root - INFO - Введення логіна...
+2025-07-05 11:55:17,206 - root - INFO - Введення пароля...
+2025-07-05 11:55:23,625 - root - ERROR - Кнопка входу не знайдена для alexwent2
+2025-07-05 11:55:35,846 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 11:56:52,587 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 11:56:52,587 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 11:56:56,707 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9C4750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:56:59,066 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 11:56:59,066 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 11:56:59,067 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 11:56:59,067 - root - INFO - Початок входу в акаунт alexwent2
+2025-07-05 11:57:00,586 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 11:57:00,755 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F4490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:03,264 - root - INFO - Завантаження головної сторінки Instagram...
+2025-07-05 11:57:04,830 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F6FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:12,923 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA10C90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:16,991 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA114D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:21,049 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA12250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:29,126 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA13D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:33,196 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2C810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:37,250 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2C850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:45,374 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA13790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:49,412 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA12E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:57:53,475 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA131D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:01,601 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F5D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:05,661 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F7F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:09,720 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F7110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:17,862 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2C510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:21,908 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2F810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:25,971 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA18950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/element
+2025-07-05 11:58:34,090 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA1A610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:58:38,167 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F4290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:58:42,229 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7A9F6050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:58:50,336 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2FA90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:58:54,407 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2FAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:58:58,485 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA2CBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:59:06,620 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA11290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:59:10,680 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA11490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:59:14,738 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F7AA10810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/38191ff41c80517efe8109a381df2e9a/elements
+2025-07-05 11:59:17,391 - root - INFO - Кнопка входу не знайдена, переходимо напряму...
+2025-07-05 11:59:18,804 - root - INFO - Сторіс tomwoker1 не знайдено
+2025-07-05 12:01:48,346 - urllib3.connectionpool - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-07-05 12:01:48,751 - root - INFO - Введення логіна...
+2025-07-05 12:01:48,937 - root - INFO - ⏱️ Пауза 22.8с між цілями
+2025-07-05 12:01:51,836 - root - INFO - Введення пароля...
+2025-07-05 12:01:58,630 - root - ERROR - Кнопка входу не знайдена для alexwent2
+2025-07-05 12:02:11,716 - root - INFO - ⏱️ Пауза 4.0 хв між акаунтами
+2025-07-05 12:02:12,117 - root - INFO - 📖 Перегляд сторіс tomwoker1 від alexwent2
+2025-07-05 12:02:17,224 - root - INFO - Сторіс tomwoker1 не знайдено
+2025-07-05 12:02:20,838 - root - INFO - 🔒 Драйвер для alexwent2 закрито
+2025-07-05 12:02:20,838 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 12:02:25,700 - root - INFO - 🔒 Всі драйвери закрито
+2025-07-05 12:35:54,220 - root - INFO - Завантажено 2 акаунтів
+2025-07-05 12:35:54,222 - root - INFO - Додано акаунт: alexwent2
+2025-07-05 12:36:15,273 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 12:36:15,273 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 12:36:15,273 - root - INFO - Обробка цілі: tomwoker1
+2025-07-05 12:36:15,274 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 12:36:21,909 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 12:36:54,737 - root - INFO - Затримка між акаунтами: 159.9 секунд
+2025-07-05 12:36:59,612 - root - INFO - Всі драйвери закрито
+2025-07-05 12:37:05,924 - root - INFO - Всі драйвери закрито
+2025-07-05 13:23:56,441 - root - INFO - 🚀 Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 13:23:56,442 - root - INFO - 👤 Робота з акаунтом alexwent2
+2025-07-05 13:23:56,442 - root - INFO - 🎯 Обробка цілі: tomwoker1
+2025-07-05 13:23:56,443 - root - ERROR - ❌ Помилка обробки цілі tomwoker1: 'InstagramBot' object has no attribute 'like_last_posts'
+2025-07-05 13:23:56,445 - root - INFO - ⏱️ Пауза 2.6 хв між акаунтами
+2025-07-05 13:49:08,448 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 13:49:08,448 - root - INFO - Instagram Bot инициализирован
+2025-07-05 13:49:08,448 - root - INFO - Аккаунты сохранены
+2025-07-05 13:49:08,448 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 13:49:11,913 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 13:49:13,552 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 13:49:14,499 - root - ERROR - Ошибка создания драйвера: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xb94553+62419]
+	GetHandleVerifier [0x0xb94594+62484]
+	(No symbol) [0x0x9d2133]
+	(No symbol) [0x0x9f9723]
+	(No symbol) [0x0x9faeb0]
+	(No symbol) [0x0x9f5fea]
+	(No symbol) [0x0xa49832]
+	(No symbol) [0x0xa4931c]
+	(No symbol) [0x0xa4aa20]
+	(No symbol) [0x0xa4a82a]
+	(No symbol) [0x0xa3f266]
+	(No symbol) [0x0xa0e852]
+	(No symbol) [0x0xa0f6f4]
+	GetHandleVerifier [0x0xe04833+2619059]
+	GetHandleVerifier [0x0xdffc4a+2599626]
+	GetHandleVerifier [0x0xbbb0fa+221050]
+	GetHandleVerifier [0x0xbab378+156152]
+	GetHandleVerifier [0x0xbb1d2d+183213]
+	GetHandleVerifier [0x0xb9c438+94904]
+	GetHandleVerifier [0x0xb9c5c2+95298]
+	GetHandleVerifier [0x0xb8771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 13:49:14,500 - root - ERROR - Ошибка входа в аккаунт alexwent2: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xb94553+62419]
+	GetHandleVerifier [0x0xb94594+62484]
+	(No symbol) [0x0x9d2133]
+	(No symbol) [0x0x9f9723]
+	(No symbol) [0x0x9faeb0]
+	(No symbol) [0x0x9f5fea]
+	(No symbol) [0x0xa49832]
+	(No symbol) [0x0xa4931c]
+	(No symbol) [0x0xa4aa20]
+	(No symbol) [0x0xa4a82a]
+	(No symbol) [0x0xa3f266]
+	(No symbol) [0x0xa0e852]
+	(No symbol) [0x0xa0f6f4]
+	GetHandleVerifier [0x0xe04833+2619059]
+	GetHandleVerifier [0x0xdffc4a+2599626]
+	GetHandleVerifier [0x0xbbb0fa+221050]
+	GetHandleVerifier [0x0xbab378+156152]
+	GetHandleVerifier [0x0xbb1d2d+183213]
+	GetHandleVerifier [0x0xb9c438+94904]
+	GetHandleVerifier [0x0xb9c5c2+95298]
+	GetHandleVerifier [0x0xb8771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 13:49:14,502 - root - ERROR - Не удалось войти в аккаунт alexwent2
+2025-07-05 13:49:14,502 - root - INFO - === РЕЗУЛЬТАТЫ АВТОМАТИЗАЦИИ ===
+2025-07-05 13:49:14,503 - root - INFO - Обработано целей: 0
+2025-07-05 13:49:14,503 - root - INFO - Успешно: 0
+2025-07-05 13:49:14,503 - root - INFO - Ошибок: 0
+2025-07-05 13:49:14,503 - root - INFO - Всего действий: 0
+2025-07-05 13:49:14,503 - root - INFO - Успешных действий: 0
+2025-07-05 13:49:14,504 - root - INFO - Время работы: 0:00:06.056042
+2025-07-05 13:49:14,504 - root - INFO - Все драйверы закрыты
+2025-07-05 13:50:16,494 - root - INFO - Все драйверы закрыты
+2025-07-05 13:52:25,855 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 13:52:25,855 - root - INFO - Instagram Bot инициализирован
+2025-07-05 13:52:25,870 - root - INFO - Аккаунты сохранены
+2025-07-05 13:52:25,870 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 13:52:29,699 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 13:52:31,276 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 13:52:32,401 - root - ERROR - Ошибка создания драйвера: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xc74553+62419]
+	GetHandleVerifier [0x0xc74594+62484]
+	(No symbol) [0x0xab2133]
+	(No symbol) [0x0xad9723]
+	(No symbol) [0x0xadaeb0]
+	(No symbol) [0x0xad5fea]
+	(No symbol) [0x0xb29832]
+	(No symbol) [0x0xb2931c]
+	(No symbol) [0x0xb2aa20]
+	(No symbol) [0x0xb2a82a]
+	(No symbol) [0x0xb1f266]
+	(No symbol) [0x0xaee852]
+	(No symbol) [0x0xaef6f4]
+	GetHandleVerifier [0x0xee4833+2619059]
+	GetHandleVerifier [0x0xedfc4a+2599626]
+	GetHandleVerifier [0x0xc9b0fa+221050]
+	GetHandleVerifier [0x0xc8b378+156152]
+	GetHandleVerifier [0x0xc91d2d+183213]
+	GetHandleVerifier [0x0xc7c438+94904]
+	GetHandleVerifier [0x0xc7c5c2+95298]
+	GetHandleVerifier [0x0xc6771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 13:52:32,402 - root - ERROR - Ошибка входа в аккаунт alexwent2: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xc74553+62419]
+	GetHandleVerifier [0x0xc74594+62484]
+	(No symbol) [0x0xab2133]
+	(No symbol) [0x0xad9723]
+	(No symbol) [0x0xadaeb0]
+	(No symbol) [0x0xad5fea]
+	(No symbol) [0x0xb29832]
+	(No symbol) [0x0xb2931c]
+	(No symbol) [0x0xb2aa20]
+	(No symbol) [0x0xb2a82a]
+	(No symbol) [0x0xb1f266]
+	(No symbol) [0x0xaee852]
+	(No symbol) [0x0xaef6f4]
+	GetHandleVerifier [0x0xee4833+2619059]
+	GetHandleVerifier [0x0xedfc4a+2599626]
+	GetHandleVerifier [0x0xc9b0fa+221050]
+	GetHandleVerifier [0x0xc8b378+156152]
+	GetHandleVerifier [0x0xc91d2d+183213]
+	GetHandleVerifier [0x0xc7c438+94904]
+	GetHandleVerifier [0x0xc7c5c2+95298]
+	GetHandleVerifier [0x0xc6771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 13:52:32,404 - root - ERROR - Не удалось войти в аккаунт alexwent2
+2025-07-05 13:52:32,404 - root - INFO - === РЕЗУЛЬТАТЫ АВТОМАТИЗАЦИИ ===
+2025-07-05 13:52:32,404 - root - INFO - Обработано целей: 0
+2025-07-05 13:52:32,404 - root - INFO - Успешно: 0
+2025-07-05 13:52:32,404 - root - INFO - Ошибок: 0
+2025-07-05 13:52:32,405 - root - INFO - Всего действий: 0
+2025-07-05 13:52:32,405 - root - INFO - Успешных действий: 0
+2025-07-05 13:52:32,405 - root - INFO - Время работы: 0:00:06.550685
+2025-07-05 13:52:32,405 - root - INFO - Все драйверы закрыты
+2025-07-05 13:57:10,122 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 13:57:10,122 - root - INFO - Instagram Bot инициализирован
+2025-07-05 13:57:10,122 - root - INFO - Аккаунты сохранены
+2025-07-05 13:57:10,122 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 13:57:11,976 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 13:57:13,614 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 13:57:14,722 - root - ERROR - Ошибка создания драйвера: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x2e4553+62419]
+	GetHandleVerifier [0x0x2e4594+62484]
+	(No symbol) [0x0x122133]
+	(No symbol) [0x0x149723]
+	(No symbol) [0x0x14aeb0]
+	(No symbol) [0x0x145fea]
+	(No symbol) [0x0x199832]
+	(No symbol) [0x0x19931c]
+	(No symbol) [0x0x19aa20]
+	(No symbol) [0x0x19a82a]
+	(No symbol) [0x0x18f266]
+	(No symbol) [0x0x15e852]
+	(No symbol) [0x0x15f6f4]
+	GetHandleVerifier [0x0x554833+2619059]
+	GetHandleVerifier [0x0x54fc4a+2599626]
+	GetHandleVerifier [0x0x30b0fa+221050]
+	GetHandleVerifier [0x0x2fb378+156152]
+	GetHandleVerifier [0x0x301d2d+183213]
+	GetHandleVerifier [0x0x2ec438+94904]
+	GetHandleVerifier [0x0x2ec5c2+95298]
+	GetHandleVerifier [0x0x2d771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+	(No symbol) [0x0]
+
+2025-07-05 13:57:14,725 - root - ERROR - Ошибка входа в аккаунт alexwent2: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0x2e4553+62419]
+	GetHandleVerifier [0x0x2e4594+62484]
+	(No symbol) [0x0x122133]
+	(No symbol) [0x0x149723]
+	(No symbol) [0x0x14aeb0]
+	(No symbol) [0x0x145fea]
+	(No symbol) [0x0x199832]
+	(No symbol) [0x0x19931c]
+	(No symbol) [0x0x19aa20]
+	(No symbol) [0x0x19a82a]
+	(No symbol) [0x0x18f266]
+	(No symbol) [0x0x15e852]
+	(No symbol) [0x0x15f6f4]
+	GetHandleVerifier [0x0x554833+2619059]
+	GetHandleVerifier [0x0x54fc4a+2599626]
+	GetHandleVerifier [0x0x30b0fa+221050]
+	GetHandleVerifier [0x0x2fb378+156152]
+	GetHandleVerifier [0x0x301d2d+183213]
+	GetHandleVerifier [0x0x2ec438+94904]
+	GetHandleVerifier [0x0x2ec5c2+95298]
+	GetHandleVerifier [0x0x2d771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+	(No symbol) [0x0]
+
+2025-07-05 13:57:14,726 - root - ERROR - Не удалось войти в аккаунт alexwent2
+2025-07-05 13:57:14,727 - root - INFO - === РЕЗУЛЬТАТЫ АВТОМАТИЗАЦИИ ===
+2025-07-05 13:57:14,727 - root - INFO - Обработано целей: 0
+2025-07-05 13:57:14,727 - root - INFO - Успешно: 0
+2025-07-05 13:57:14,728 - root - INFO - Ошибок: 0
+2025-07-05 13:57:14,728 - root - INFO - Всего действий: 0
+2025-07-05 13:57:14,728 - root - INFO - Успешных действий: 0
+2025-07-05 13:57:14,729 - root - INFO - Время работы: 0:00:04.607049
+2025-07-05 13:57:14,729 - root - INFO - Все драйверы закрыты
+2025-07-05 13:59:47,176 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 13:59:47,178 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 13:59:47,178 - root - INFO - undetected-chromedriver доступен
+2025-07-05 13:59:47,178 - root - INFO - webdriver-manager доступен
+2025-07-05 13:59:47,179 - root - INFO - Instagram Bot инициализирован
+2025-07-05 13:59:47,186 - root - INFO - Аккаунты сохранены
+2025-07-05 13:59:47,187 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 13:59:49,715 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 13:59:51,298 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 13:59:52,424 - root - WARNING - Попытка 1 создания драйвера не удалась: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: useAutomationExtension
+Stacktrace:
+	GetHandleVerifier [0x0x1064553+62419]
+	GetHandleVerifier [0x0x1064594+62484]
+	(No symbol) [0x0xea2133]
+	(No symbol) [0x0xec9723]
+	(No symbol) [0x0xecaeb0]
+	(No symbol) [0x0xec5fea]
+	(No symbol) [0x0xf19832]
+	(No symbol) [0x0xf1931c]
+	(No symbol) [0x0xf1aa20]
+	(No symbol) [0x0xf1a82a]
+	(No symbol) [0x0xf0f266]
+	(No symbol) [0x0xede852]
+	(No symbol) [0x0xedf6f4]
+	GetHandleVerifier [0x0x12d4833+2619059]
+	GetHandleVerifier [0x0x12cfc4a+2599626]
+	GetHandleVerifier [0x0x108b0fa+221050]
+	GetHandleVerifier [0x0x107b378+156152]
+	GetHandleVerifier [0x0x1081d2d+183213]
+	GetHandleVerifier [0x0x106c438+94904]
+	GetHandleVerifier [0x0x106c5c2+95298]
+	GetHandleVerifier [0x0x105771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 13:59:52,426 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 13:59:53,516 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 13:59:55,056 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 13:59:55,437 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.92" for browser google-chrome "138.0.7204" in cache
+2025-07-05 13:59:55,437 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 13:59:56,285 - WDM - INFO - WebDriver version 138.0.7204.92 selected
+2025-07-05 13:59:56,290 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 13:59:56,291 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 13:59:56,656 - WDM - INFO - Driver downloading response is 200
+2025-07-05 13:59:57,536 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 13:59:58,205 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92]
+2025-07-05 13:59:58,205 - root - WARNING - Попытка 2 создания драйвера не удалась: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 14:00:01,335 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:00:01,336 - root - INFO - Переход на Instagram...
+2025-07-05 14:02:11,932 - root - INFO - Успешно загружен Instagram
+2025-07-05 14:02:11,932 - root - INFO - Попытка входа для alexwent2
+2025-07-05 14:02:11,944 - root - ERROR - Ошибка выполнения входа: Message: tab crashed
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7182e6f25+76917]
+	GetHandleVerifier [0x0x7ff7182e6f80+77008]
+	(No symbol) [0x0x7ff718099c1c]
+	(No symbol) [0x0x7ff71808725b]
+	(No symbol) [0x0x7ff718084e8b]
+	(No symbol) [0x0x7ff7180858ef]
+	(No symbol) [0x0x7ff71809464e]
+	(No symbol) [0x0x7ff7180aa621]
+	(No symbol) [0x0x7ff7180b178a]
+	(No symbol) [0x0x7ff71808608d]
+	(No symbol) [0x0x7ff7180a9e11]
+	(No symbol) [0x0x7ff718140535]
+	(No symbol) [0x0x7ff718118243]
+	(No symbol) [0x0x7ff7180e1431]
+	(No symbol) [0x0x7ff7180e21c3]
+	GetHandleVerifier [0x0x7ff7185bd24d+3051421]
+	GetHandleVerifier [0x0x7ff7185b78a3+3028467]
+	GetHandleVerifier [0x0x7ff7185d583d+3151245]
+	GetHandleVerifier [0x0x7ff7183017ee+185662]
+	GetHandleVerifier [0x0x7ff7183096af+218111]
+	GetHandleVerifier [0x0x7ff7182efaa4+112628]
+	GetHandleVerifier [0x0x7ff7182efc59+113065]
+	GetHandleVerifier [0x0x7ff7182d6c28+10616]
+	BaseThreadInitThunk [0x0x7ff8e6637374+20]
+	RtlUserThreadStart [0x0x7ff8e855cc91+33]
+
+2025-07-05 14:02:11,946 - root - ERROR - Не удалось войти в аккаунт alexwent2
+2025-07-05 14:02:58,937 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 14:02:58,937 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 14:02:58,937 - root - INFO - undetected-chromedriver доступен
+2025-07-05 14:02:58,937 - root - INFO - webdriver-manager доступен
+2025-07-05 14:02:58,937 - root - INFO - Instagram Bot инициализирован
+2025-07-05 14:02:58,937 - root - INFO - Аккаунты сохранены
+2025-07-05 14:02:58,953 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 14:03:01,653 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:03:03,213 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:03:04,154 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:03:04,154 - root - INFO - Переход на Instagram...
+2025-07-05 14:04:47,409 - root - INFO - Драйвер аккаунта alexwent2 закрыт
+2025-07-05 14:04:47,409 - root - INFO - Все драйверы закрыты
+2025-07-05 14:04:51,334 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002050D682990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/448ea298fb6db847479764a7fc1673a3/elements
+2025-07-05 14:15:27,734 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 14:15:27,734 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 14:15:27,734 - root - INFO - undetected-chromedriver доступен
+2025-07-05 14:15:27,734 - root - INFO - webdriver-manager доступен
+2025-07-05 14:15:27,734 - root - INFO - Instagram Bot инициализирован
+2025-07-05 14:15:27,734 - root - INFO - Аккаунты сохранены
+2025-07-05 14:15:27,734 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 14:15:31,610 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:15:33,248 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:15:34,259 - root - WARNING - Попытка 1 создания драйвера не удалась: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+	GetHandleVerifier [0x0xd64553+62419]
+	GetHandleVerifier [0x0xd64594+62484]
+	(No symbol) [0x0xba2133]
+	(No symbol) [0x0xbc9723]
+	(No symbol) [0x0xbcaeb0]
+	(No symbol) [0x0xbc5fea]
+	(No symbol) [0x0xc19832]
+	(No symbol) [0x0xc1931c]
+	(No symbol) [0x0xc1aa20]
+	(No symbol) [0x0xc1a82a]
+	(No symbol) [0x0xc0f266]
+	(No symbol) [0x0xbde852]
+	(No symbol) [0x0xbdf6f4]
+	GetHandleVerifier [0x0xfd4833+2619059]
+	GetHandleVerifier [0x0xfcfc4a+2599626]
+	GetHandleVerifier [0x0xd8b0fa+221050]
+	GetHandleVerifier [0x0xd7b378+156152]
+	GetHandleVerifier [0x0xd81d2d+183213]
+	GetHandleVerifier [0x0xd6c438+94904]
+	GetHandleVerifier [0x0xd6c5c2+95298]
+	GetHandleVerifier [0x0xd5771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 14:15:34,259 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 14:15:35,344 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 14:15:35,713 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 14:15:36,077 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 14:15:36,077 - root - WARNING - Попытка 2 создания драйвера не удалась: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 14:15:37,673 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:15:37,673 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 14:16:13,046 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FC0BECAD10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b22475d544f08e15969b745f45ae9faf/element
+2025-07-05 14:16:13,651 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FC0BECB3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b22475d544f08e15969b745f45ae9faf
+2025-07-05 14:16:17,096 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FC0BECBBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b22475d544f08e15969b745f45ae9faf/element
+2025-07-05 14:16:17,705 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FC0BED3010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b22475d544f08e15969b745f45ae9faf
+2025-07-05 14:16:21,187 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FC0BED32D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/b22475d544f08e15969b745f45ae9faf/element
+2025-07-05 14:18:32,234 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 14:18:32,234 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 14:18:32,234 - root - INFO - undetected-chromedriver доступен
+2025-07-05 14:18:32,234 - root - INFO - webdriver-manager доступен
+2025-07-05 14:18:32,234 - root - INFO - Instagram Bot инициализирован
+2025-07-05 14:18:32,250 - root - INFO - Аккаунты сохранены
+2025-07-05 14:18:32,250 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 14:18:34,125 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:18:35,698 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:18:36,670 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:18:36,671 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 14:21:03,412 - root - INFO - Успешно загружена страница входа Instagram
+2025-07-05 14:21:03,412 - root - INFO - Попытка входа для alexwent2
+2025-07-05 14:21:56,054 - root - INFO - Ожидание загрузки формы входа...
+2025-07-05 14:22:27,681 - root - INFO - Форма входа загружена (найден элемент: input[name='username'])
+2025-07-05 14:22:29,277 - root - INFO - Заполнение формы входа...
+2025-07-05 14:22:29,299 - root - INFO - Найдено поле username: input[name='username']
+2025-07-05 14:22:29,316 - root - INFO - Найдено поле password: input[name='password']
+2025-07-05 14:22:41,982 - root - INFO - Ввод логина...
+2025-07-05 14:22:46,535 - root - INFO - Ввод пароля...
+2025-07-05 14:22:49,594 - root - INFO - Форма заполнена успешно
+2025-07-05 14:24:09,882 - root - INFO - Форма отправлена через Enter
+2025-07-05 14:26:47,258 - root - INFO - Драйвер аккаунта alexwent2 закрыт
+2025-07-05 14:26:47,259 - root - INFO - Все драйверы закрыты
+2025-07-05 14:26:48,235 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D3472365D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:26:52,313 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347256250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:26:53,407 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:26:54,906 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:26:56,022 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:26:56,022 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 14:26:56,406 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347278D10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:04,531 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D34726DAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:08,585 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D34726E550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:12,641 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D34726EF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:20,716 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347237C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:24,769 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347234F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:28,818 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347237010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:36,951 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D34726C610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:41,011 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D34726FD90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:45,081 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347244850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/elements
+2025-07-05 14:27:53,184 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D347245F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/87cda2d7842459ff0c41862bf81800ab/element
+2025-07-05 14:28:32,907 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 14:28:32,907 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 14:28:32,907 - root - INFO - undetected-chromedriver доступен
+2025-07-05 14:28:32,907 - root - INFO - webdriver-manager доступен
+2025-07-05 14:28:32,907 - root - INFO - Instagram Bot инициализирован
+2025-07-05 14:28:32,945 - root - INFO - Аккаунты сохранены
+2025-07-05 14:28:32,945 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 14:28:37,266 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:28:38,808 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:28:39,923 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:28:39,923 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 14:31:09,321 - root - INFO - Успешно загружена страница входа Instagram
+2025-07-05 14:31:09,321 - root - INFO - Попытка входа для alexwent2
+2025-07-05 14:32:02,004 - root - INFO - Ожидание загрузки формы входа...
+2025-07-05 14:32:33,598 - root - INFO - Форма входа загружена (найден элемент: input[name='username'])
+2025-07-05 14:32:35,159 - root - INFO - Заполнение формы входа...
+2025-07-05 14:32:35,183 - root - INFO - Найдено поле username: input[name='username']
+2025-07-05 14:32:35,201 - root - INFO - Найдено поле password: input[name='password']
+2025-07-05 14:32:47,673 - root - INFO - Ввод логина...
+2025-07-05 14:32:52,556 - root - INFO - Ввод пароля...
+2025-07-05 14:32:54,722 - root - INFO - Форма заполнена успешно
+2025-07-05 14:34:15,149 - root - INFO - Форма отправлена через Enter
+2025-07-05 14:46:32,860 - root - INFO - Драйвер аккаунта alexwent2 закрыт
+2025-07-05 14:46:32,860 - root - INFO - Все драйверы закрыты
+2025-07-05 14:46:36,721 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C1551E5610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/6f8b3b7ab68d617460f94d4f88bc741b/element
+2025-07-05 14:46:37,106 - root - INFO - Все драйверы закрыты
+2025-07-05 14:56:09,566 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 14:56:09,566 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 14:56:09,566 - root - INFO - undetected-chromedriver доступен
+2025-07-05 14:56:09,566 - root - INFO - webdriver-manager доступен
+2025-07-05 14:56:09,566 - root - INFO - Instagram Bot инициализирован
+2025-07-05 14:56:09,566 - root - INFO - Аккаунты сохранены
+2025-07-05 14:56:09,566 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 14:56:12,083 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 14:56:13,721 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 14:56:15,242 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 14:56:15,242 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 14:58:44,688 - root - INFO - Успешно загружена страница входа Instagram
+2025-07-05 14:58:44,688 - root - INFO - Попытка входа для alexwent2
+2025-07-05 14:59:37,448 - root - INFO - Ожидание загрузки формы входа...
+2025-07-05 15:00:09,078 - root - INFO - Форма входа загружена (найден элемент: input[name='username'])
+2025-07-05 15:00:11,005 - root - INFO - Быстрое заполнение формы входа...
+2025-07-05 15:00:11,026 - root - INFO - Найдено поле username: input[name='username']
+2025-07-05 15:00:11,044 - root - INFO - Найдено поле password: input[name='password']
+2025-07-05 15:00:11,396 - root - INFO - Логин введен
+2025-07-05 15:00:11,731 - root - INFO - Пароль введен
+2025-07-05 15:00:11,932 - root - INFO - Автоматическая отправка формы...
+2025-07-05 15:02:02,574 - root - INFO - Автоматически нажата кнопка входа: div[role='button'][tabindex='0']
+2025-07-05 15:02:03,075 - root - INFO - Ожидание результата входа...
+2025-07-05 15:11:05,199 - root - INFO - Загружено 1 аккаунтов
+2025-07-05 15:11:05,199 - root - INFO - Chrome версия: 138.0.7204.97
+2025-07-05 15:11:05,199 - root - INFO - undetected-chromedriver доступен
+2025-07-05 15:11:05,199 - root - INFO - webdriver-manager доступен
+2025-07-05 15:11:05,199 - root - INFO - Instagram Bot инициализирован
+2025-07-05 15:11:05,199 - root - INFO - Аккаунты сохранены
+2025-07-05 15:11:05,199 - root - INFO - Аккаунт alexwent2 добавлен
+2025-07-05 15:11:07,723 - root - INFO - Запуск автоматизации Instagram Bot
+2025-07-05 15:11:09,289 - undetected_chromedriver.patcher - INFO - patching driver executable C:\Users\timof\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-07-05 15:11:10,825 - root - INFO - Драйвер сконфигурирован для аккаунта: alexwent2
+2025-07-05 15:11:10,825 - root - INFO - Переход напрямую на страницу входа Instagram...
+2025-07-05 15:13:37,778 - root - INFO - Успешно загружена страница входа Instagram
+2025-07-05 15:13:37,778 - root - INFO - Попытка входа для alexwent2
+2025-07-05 15:14:30,477 - root - INFO - Ожидание загрузки формы входа...
+2025-07-05 15:15:02,102 - root - INFO - Форма входа загружена (найден элемент: input[name='username'])
+2025-07-05 15:15:03,610 - root - INFO - Быстрое заполнение формы входа...
+2025-07-05 15:15:03,634 - root - INFO - Найдено поле username: input[name='username']
+2025-07-05 15:15:03,654 - root - INFO - Найдено поле password: input[name='password']
+2025-07-05 15:15:03,940 - root - INFO - Логин введен
+2025-07-05 15:15:04,278 - root - INFO - Пароль введен
+2025-07-05 15:15:04,480 - root - INFO - 🚀 Швидка відправка форми...
+2025-07-05 15:15:04,516 - root - INFO - ✅ Форма відправлена через Enter
+2025-07-05 15:30:16 - root - INFO - Логування налаштовано
+2025-07-05 15:31:00 - root - INFO - Логування налаштовано
+2025-07-05 15:32:17 - root - INFO - Логування налаштовано
+2025-07-05 15:35:48 - root - INFO - Логування налаштовано
+2025-07-05 15:36:12 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:36:13 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:13 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:13 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 15:36:13 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:36:20 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:36:21 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:21 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:22 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 15:36:22 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:36:28 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:36:29 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:30 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:36:30 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 15:36:30 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:38:32 - root - INFO - Логування налаштовано
+2025-07-05 15:38:33 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:38:45 - root - INFO - Додано акаунт: alexwent2
+2025-07-05 15:38:54 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:38:54 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:38:54 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:38:54 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:39:02 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:39:07 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:39:46 - root - INFO - Затримка між акаунтами: 116.0 секунд
+2025-07-05 15:39:50 - root - INFO - Всі драйвери закрито
+2025-07-05 15:42:39 - root - INFO - Логування налаштовано
+2025-07-05 15:42:39 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:42:41 - root - INFO - Всі драйвери закрито
+2025-07-05 15:42:44 - root - INFO - Логування налаштовано
+2025-07-05 15:42:45 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:43:01 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:43:01 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:43:01 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:43:01 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:43:06 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:43:10 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:43:37 - root - INFO - Затримка між акаунтами: 127.1 секунд
+2025-07-05 15:44:31 - root - INFO - Всі драйвери закрито
+2025-07-05 15:45:05 - root - INFO - Логування налаштовано
+2025-07-05 15:45:06 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:45:22 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:45:22 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:45:22 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:45:22 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:45:30 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:45:34 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:45:35 - root - INFO - Всі драйвери закрито
+2025-07-05 15:45:36 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:45:36 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:45:36 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:45:36 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:45:39 - root - INFO - Всі драйвери закрито
+2025-07-05 15:49:27 - root - INFO - Логування налаштовано
+2025-07-05 15:49:56 - root - INFO - Логування налаштовано
+2025-07-05 15:50:08 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:50:09 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:09 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:10 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.92" for browser google-chrome "138.0.7204" in cache
+2025-07-05 15:50:10 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:11 - WDM - INFO - WebDriver version 138.0.7204.92 selected
+2025-07-05 15:50:11 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 15:50:11 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 15:50:11 - WDM - INFO - Driver downloading response is 200
+2025-07-05 15:50:12 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:13 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92]
+2025-07-05 15:50:13 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:50:23 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:50:24 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:24 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:24 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 15:50:24 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:50:30 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 15:50:31 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:31 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 15:50:32 - WDM - INFO - Driver [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-05 15:50:32 - root - ERROR - Помилка входу для alexwent2: [WinError 193] %1 is not a valid Win32 application
+2025-07-05 15:53:36 - root - INFO - Логування налаштовано
+2025-07-05 15:53:37 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:53:50 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:53:50 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:53:50 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:53:50 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:53:58 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:54:04 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 15:55:56 - root - INFO - Логування налаштовано
+2025-07-05 15:55:57 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:56:46 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 15:56:46 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 15:56:46 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 15:57:09 - root - INFO - Затримка між акаунтами: 64.0 секунд
+2025-07-05 15:57:15 - root - INFO - Всі драйвери закрито
+2025-07-05 15:59:21 - root - INFO - Логування налаштовано
+2025-07-05 15:59:21 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 15:59:36 - root - INFO - Всі драйвери закрито
+2025-07-05 16:02:28 - root - INFO - Логування налаштовано
+2025-07-05 16:02:29 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 16:02:38 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 16:02:38 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 16:02:38 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 16:02:38 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 16:02:43 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 16:02:50 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 16:03:08 - root - INFO - Затримка між акаунтами: 115.8 секунд
+2025-07-05 16:05:04 - root - INFO - Автоматизація завершена: 0/3 (0.0%)
+2025-07-05 16:05:42 - root - INFO - Логування налаштовано
+2025-07-05 16:05:43 - root - INFO - Завантажено 1 акаунтів
+2025-07-05 16:05:58 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 16:05:58 - root - INFO - Вхід в акаунт: alexwent2
+2025-07-05 16:05:58 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-05 16:05:58 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 16:05:59 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:06:00 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:06:00 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.92" for browser google-chrome "138.0.7204" in cache
+2025-07-05 16:06:00 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:06:01 - WDM - INFO - WebDriver version 138.0.7204.92 selected
+2025-07-05 16:06:01 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 16:06:01 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 16:06:02 - WDM - INFO - Driver downloading response is 200
+2025-07-05 16:06:02 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:06:03 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92]
+2025-07-05 16:06:03 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32\chromedriver.exe
+2025-07-05 16:06:05 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-05 16:06:10 - root - WARNING - Капча на головній сторінці
+2025-07-05 16:06:10 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-05 16:06:20 - root - INFO - Капча обійдена через повернення назад
+2025-07-05 16:06:27 - root - WARNING - Капча на сторінці входу
+2025-07-05 16:06:27 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-05 16:06:38 - root - INFO - Капча обійдена через повернення назад
+2025-07-05 16:06:38 - root - ERROR - Не знайдено поле для введення логіна
+2025-07-05 16:06:38 - root - ERROR - Не вдалося увійти в акаунт alexwent2
+2025-07-05 16:06:38 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 16:06:38 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 16:06:38 - root - INFO - Перехід на профіль tomwoker
+2025-07-05 16:06:46 - root - WARNING - Не знайдено постів у tomwoker
+2025-07-05 16:06:51 - root - INFO - Пошук сторіс tomwoker
+2025-07-05 16:06:57 - root - WARNING - Не знайдено активних сторіс для tomwoker
+2025-07-05 16:07:02 - root - ERROR - Акаунт alexwent2 не залогінений
+2025-07-05 16:07:04 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-05 16:07:04 - root - INFO - Всі драйвери закрито
+2025-07-05 16:07:04 - root - INFO - Запуск автоматизації: 1 акаунтів, 1 цілей
+2025-07-05 16:07:04 - root - INFO - Вхід в акаунт: alexwent2
+2025-07-05 16:07:04 - root - INFO - Спроба входу для акаунту: alexwent2
+2025-07-05 16:07:04 - WDM - INFO - ====== WebDriver manager ======
+2025-07-05 16:07:06 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:07:06 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:07:06 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.92" for browser google-chrome "138.0.7204" in cache
+2025-07-05 16:07:06 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:07:07 - WDM - INFO - WebDriver version 138.0.7204.92 selected
+2025-07-05 16:07:07 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 16:07:07 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.92/win32/chromedriver-win32.zip
+2025-07-05 16:07:07 - WDM - INFO - Driver downloading response is 200
+2025-07-05 16:07:08 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-05 16:07:09 - WDM - INFO - Driver has been saved in cache [C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92]
+2025-07-05 16:07:09 - root - INFO - Використовується ChromeDriver: C:\Users\timof\.wdm\drivers\chromedriver\win64\138.0.7204.92\chromedriver-win32\chromedriver.exe
+2025-07-05 16:07:10 - root - INFO - WebDriver успішно створено для alexwent2
+2025-07-05 16:07:15 - root - WARNING - Капча на головній сторінці
+2025-07-05 16:07:15 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-05 16:07:26 - root - INFO - Капча обійдена через повернення назад
+2025-07-05 16:07:34 - root - WARNING - Капча на сторінці входу
+2025-07-05 16:07:34 - root - WARNING - Виявлено капчу, спроба обходу...
+2025-07-05 16:07:35 - root - INFO - Затримка між акаунтами: 153.7 секунд
+2025-07-05 16:07:45 - root - ERROR - Не вдалося обійти капчу автоматично
+2025-07-05 16:07:45 - root - ERROR - Не вдалося обійти капчу на сторінці входу
+2025-07-05 16:07:45 - root - ERROR - Не вдалося увійти в акаунт alexwent2
+2025-07-05 16:07:45 - root - INFO - Обробка акаунту: alexwent2
+2025-07-05 16:07:45 - root - INFO - Обробка цілі: tomwoker
+2025-07-05 16:07:45 - root - INFO - Перехід на профіль tomwoker
+2025-07-05 16:07:52 - root - WARNING - Не знайдено постів у tomwoker
+2025-07-05 16:08:01 - root - INFO - Пошук сторіс tomwoker
+2025-07-05 16:08:07 - root - WARNING - Не знайдено активних сторіс для tomwoker
+2025-07-05 16:08:14 - root - INFO - Пошук сторіс tomwoker для відповіді
+2025-07-05 16:08:14 - root - ERROR - Помилка переходу на головну сторінку: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.97)
+Stacktrace:
+	GetHandleVerifier [0x0xe54553+62419]
+	GetHandleVerifier [0x0xe54594+62484]
+	(No symbol) [0x0xc92133]
+	(No symbol) [0x0xc81b40]
+	(No symbol) [0x0xc9f912]
+	(No symbol) [0x0xd05d6c]
+	(No symbol) [0x0xd20159]
+	(No symbol) [0x0xcff266]
+	(No symbol) [0x0xcce852]
+	(No symbol) [0x0xccf6f4]
+	GetHandleVerifier [0x0x10c4833+2619059]
+	GetHandleVerifier [0x0x10bfc4a+2599626]
+	GetHandleVerifier [0x0xe7b0fa+221050]
+	GetHandleVerifier [0x0xe6b378+156152]
+	GetHandleVerifier [0x0xe71d2d+183213]
+	GetHandleVerifier [0x0xe5c438+94904]
+	GetHandleVerifier [0x0xe5c5c2+95298]
+	GetHandleVerifier [0x0xe4771a+9626]
+	BaseThreadInitThunk [0x0x7704fcc9+25]
+	RtlGetAppContainerNamedObjectPath [0x0x775e82ae+286]
+	RtlGetAppContainerNamedObjectPath [0x0x775e827e+238]
+
+2025-07-05 16:08:23 - root - INFO - Драйвер для alexwent2 закрито
+2025-07-05 16:08:23 - root - INFO - Всі драйвери закрито
