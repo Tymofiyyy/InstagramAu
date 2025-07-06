@@ -1,233 +1,368 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, filedialog, scrolledtext
+from tkinter import ttk, messagebox, scrolledtext, filedialog
 import threading
 import json
 import os
 from datetime import datetime
 import logging
-from PIL import Image, ImageTk
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import matplotlib.dates as mdates
-from instagram_bot import InstagramBot
-from config import Config
-from utils import DatabaseManager, MessageManager, SecurityManager
-
-class ModernStyle:
-    """Сучасний стиль для інтерфейсу"""
-    
-    # Темна тема
-    DARK_THEME = {
-        'bg': '#1a1a1a',
-        'fg': '#ffffff',
-        'select_bg': '#3d3d3d',
-        'select_fg': '#ffffff',
-        'entry_bg': '#2d2d2d',
-        'entry_fg': '#ffffff',
-        'button_bg': '#4a4a4a',
-        'button_fg': '#ffffff',
-        'button_active': '#5a5a5a',
-        'accent': '#00d4aa',
-        'success': '#00ff88',
-        'warning': '#ffaa00',
-        'error': '#ff4444',
-        'info': '#44aaff'
-    }
-    
-    # Світла тема
-    LIGHT_THEME = {
-        'bg': '#ffffff',
-        'fg': '#000000',
-        'select_bg': '#0078d4',
-        'select_fg': '#ffffff',
-        'entry_bg': '#f0f0f0',
-        'entry_fg': '#000000',
-        'button_bg': '#e0e0e0',
-        'button_fg': '#000000',
-        'button_active': '#d0d0d0',
-        'accent': '#0078d4',
-        'success': '#00aa00',
-        'warning': '#ff8800',
-        'error': '#cc0000',
-        'info': '#0066cc'
-    }
-    
-    @classmethod
-    def get_theme(cls, theme_name='dark'):
-        return cls.DARK_THEME if theme_name == 'dark' else cls.LIGHT_THEME
 
 class InstagramBotGUI:
     def __init__(self):
         self.root = tk.Tk()
-        self.root.title("Instagram Bot - Мобільна автоматизація")
-        self.root.geometry("1200x800")
-        self.root.minsize(800, 600)
+        self.root.title("Instagram Bot - Багато користувачів з багаторядковими повідомленнями")
+        self.root.geometry("1400x900")
+        self.root.minsize(1000, 700)
         
-        # Налаштування теми
-        self.theme = ModernStyle.get_theme(Config.GUI.get('theme', 'dark'))
+        # Стилізація
         self.setup_style()
-        
-        # Менеджери
-        self.db = DatabaseManager()
-        self.message_manager = MessageManager()
-        self.security_manager = SecurityManager()
         
         # Змінні
         self.bots = {}
         self.running_bots = set()
-        self.accounts = []
-        self.current_account = None
         
         # Створення інтерфейсу
         self.create_widgets()
-        self.load_accounts()
         
-        # Налаштування логування
-        self.setup_logging()
-        
-        # Автозбереження
-        if Config.GUI.get('auto_save', True):
-            self.auto_save()
-            
     def setup_style(self):
         """Налаштування стилю"""
         style = ttk.Style()
-        
-        # Налаштування теми
         style.theme_use('clam')
         
-        # Конфігурація стилів
-        style.configure('TLabel', 
-                       background=self.theme['bg'],
-                       foreground=self.theme['fg'])
+        # Темні кольори
+        self.colors = {
+            'bg': '#2b2b2b',
+            'fg': '#ffffff',
+            'accent': '#4a9eff',
+            'success': '#4caf50',
+            'warning': '#ff9800',
+            'error': '#f44336'
+        }
         
-        style.configure('TFrame',
-                       background=self.theme['bg'])
-                       
-        style.configure('TButton',
-                       background=self.theme['button_bg'],
-                       foreground=self.theme['button_fg'],
-                       borderwidth=1,
-                       focuscolor='none')
-                       
-        style.map('TButton',
-                 background=[('active', self.theme['button_active']),
-                           ('pressed', self.theme['accent'])])
-                           
-        style.configure('TEntry',
-                       background=self.theme['entry_bg'],
-                       foreground=self.theme['entry_fg'],
-                       borderwidth=1,
-                       insertcolor=self.theme['fg'])
-                       
-        style.configure('TCombobox',
-                       background=self.theme['entry_bg'],
-                       foreground=self.theme['entry_fg'],
-                       borderwidth=1)
-                       
-        style.configure('Treeview',
-                       background=self.theme['bg'],
-                       foreground=self.theme['fg'],
-                       fieldbackground=self.theme['entry_bg'])
-                       
-        style.configure('Treeview.Heading',
-                       background=self.theme['button_bg'],
-                       foreground=self.theme['button_fg'])
-                       
-        # Кастомні стили
-        style.configure('Accent.TButton',
-                       background=self.theme['accent'],
-                       foreground='white')
-                       
-        style.configure('Success.TButton',
-                       background=self.theme['success'],
-                       foreground='white')
-                       
-        style.configure('Warning.TButton',
-                       background=self.theme['warning'],
-                       foreground='white')
-                       
-        style.configure('Error.TButton',
-                       background=self.theme['error'],
-                       foreground='white')
-        
-        # Налаштування кореневого вікна
-        self.root.configure(bg=self.theme['bg'])
+        self.root.configure(bg=self.colors['bg'])
         
     def create_widgets(self):
         """Створення віджетів"""
-        # Головне меню
-        self.create_menu()
-        
         # Головний контейнер
         main_frame = ttk.Frame(self.root)
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
-        # Панель навігації
-        self.create_navigation(main_frame)
+        # Заголовок
+        title_frame = ttk.Frame(main_frame)
+        title_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        title_label = tk.Label(title_frame, text="🤖 Instagram Bot - Багаторядкові повідомлення", 
+                              font=('Arial', 16, 'bold'), bg=self.colors['bg'], fg=self.colors['fg'])
+        title_label.pack()
         
         # Notebook для вкладок
         self.notebook = ttk.Notebook(main_frame)
-        self.notebook.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
+        self.notebook.pack(fill=tk.BOTH, expand=True)
         
         # Створення вкладок
-        self.create_accounts_tab()
         self.create_automation_tab()
         self.create_messages_tab()
-        self.create_statistics_tab()
-        self.create_settings_tab()
+        self.create_accounts_tab()
         self.create_logs_tab()
         
-    def create_menu(self):
-        """Створення меню"""
-        menubar = tk.Menu(self.root)
-        self.root.config(menu=menubar)
+    def create_automation_tab(self):
+        """Головна вкладка автоматизації"""
+        tab_frame = ttk.Frame(self.notebook)
+        self.notebook.add(tab_frame, text="🚀 Автоматизація")
         
-        # Файл
-        file_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Файл", menu=file_menu)
-        file_menu.add_command(label="Імпорт акаунтів", command=self.import_accounts)
-        file_menu.add_command(label="Експорт акаунтів", command=self.export_accounts)
-        file_menu.add_separator()
-        file_menu.add_command(label="Вихід", command=self.root.quit)
+        # Основний контейнер з прокруткою
+        canvas = tk.Canvas(tab_frame, bg=self.colors['bg'])
+        scrollbar = ttk.Scrollbar(tab_frame, orient="vertical", command=canvas.yview)
+        scrollable_frame = ttk.Frame(canvas)
         
-        # Інструменти
-        tools_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Інструменти", menu=tools_menu)
-        tools_menu.add_command(label="Перевірка проксі", command=self.check_proxies)
-        tools_menu.add_command(label="Очистка логів", command=self.clear_logs)
-        tools_menu.add_command(label="Резервна копія", command=self.create_backup)
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
         
-        # Допомога
-        help_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Допомога", menu=help_menu)
-        help_menu.add_command(label="Інструкція", command=self.show_help)
-        help_menu.add_command(label="Про програму", command=self.show_about)
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
         
-    def create_navigation(self, parent):
-        """Створення панелі навігації"""
-        nav_frame = ttk.Frame(parent)
-        nav_frame.pack(fill=tk.X, pady=(0, 10))
+        # === СЕКЦІЯ АКАУНТА ===
+        account_frame = ttk.LabelFrame(scrollable_frame, text="👤 Налаштування акаунта", padding=15)
+        account_frame.pack(fill=tk.X, padx=10, pady=10)
         
-        # Заголовок
-        title_label = ttk.Label(nav_frame, text="🤖 Instagram Bot", 
-                               font=('Arial', 16, 'bold'))
-        title_label.pack(side=tk.LEFT)
+        # Логін
+        login_frame = ttk.Frame(account_frame)
+        login_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        ttk.Label(login_frame, text="Логін Instagram:").pack(anchor=tk.W)
+        self.username_var = tk.StringVar()
+        username_entry = ttk.Entry(login_frame, textvariable=self.username_var, width=30, font=('Arial', 11))
+        username_entry.pack(fill=tk.X, pady=(5, 0))
+        
+        # Пароль
+        password_frame = ttk.Frame(account_frame)
+        password_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        ttk.Label(password_frame, text="Пароль:").pack(anchor=tk.W)
+        self.password_var = tk.StringVar()
+        password_entry = ttk.Entry(password_frame, textvariable=self.password_var, show='*', width=30, font=('Arial', 11))
+        password_entry.pack(fill=tk.X, pady=(5, 0))
+        
+        # Проксі (опційно)
+        proxy_frame = ttk.Frame(account_frame)
+        proxy_frame.pack(fill=tk.X)
+        
+        ttk.Label(proxy_frame, text="Проксі (опційно):").pack(anchor=tk.W)
+        self.proxy_var = tk.StringVar()
+        proxy_entry = ttk.Entry(proxy_frame, textvariable=self.proxy_var, width=30, font=('Arial', 11))
+        proxy_entry.pack(fill=tk.X, pady=(5, 0))
+        
+        hint_label = ttk.Label(proxy_frame, text="Формат: ip:port:username:password", foreground='gray')
+        hint_label.pack(anchor=tk.W, pady=(2, 0))
+        
+        # === СЕКЦІЯ ЦІЛЬОВИХ КОРИСТУВАЧІВ ===
+        targets_frame = ttk.LabelFrame(scrollable_frame, text="🎯 Цільові користувачі", padding=15)
+        targets_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # Інструкції
+        instructions_frame = ttk.Frame(targets_frame)
+        instructions_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        instructions_text = """📝 Способи введення користувачів:
+• Через кому: user1, user2, user3
+• Через крапку з комою: user1; user2; user3  
+• Кожен з нового рядка
+• Через пробіл: user1 user2 user3
+• З символом @: @user1, @user2 (символ @ буде видалений автоматично)"""
+        
+        instructions_label = tk.Label(instructions_frame, text=instructions_text, 
+                                     justify=tk.LEFT, bg=self.colors['bg'], fg='lightgray',
+                                     font=('Arial', 9))
+        instructions_label.pack(anchor=tk.W)
+        
+        # Поле для введення користувачів
+        targets_input_frame = ttk.Frame(targets_frame)
+        targets_input_frame.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
+        
+        ttk.Label(targets_input_frame, text="Введіть юзернейми користувачів:", font=('Arial', 11, 'bold')).pack(anchor=tk.W)
+        
+        self.targets_text = scrolledtext.ScrolledText(targets_input_frame, height=6, width=60, 
+                                                     font=('Arial', 11),
+                                                     bg='white', fg='black')
+        self.targets_text.pack(fill=tk.BOTH, expand=True, pady=(5, 10))
+        
+        # Кнопки для роботи з користувачами
+        targets_buttons_frame = ttk.Frame(targets_frame)
+        targets_buttons_frame.pack(fill=tk.X)
+        
+        ttk.Button(targets_buttons_frame, text="📄 Завантажити з файлу", 
+                  command=self.load_targets_from_file).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(targets_buttons_frame, text="💾 Зберегти в файл", 
+                  command=self.save_targets_to_file).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(targets_buttons_frame, text="🧹 Очистити", 
+                  command=self.clear_targets).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(targets_buttons_frame, text="✅ Перевірити", 
+                  command=self.validate_targets).pack(side=tk.LEFT)
+        
+        # Лічильник користувачів
+        self.targets_count_var = tk.StringVar(value="Користувачів: 0")
+        count_label = ttk.Label(targets_frame, textvariable=self.targets_count_var, font=('Arial', 10, 'bold'))
+        count_label.pack(anchor=tk.W, pady=(5, 0))
+        
+        # Відслідковування змін в тексті
+        self.targets_text.bind('<KeyRelease>', self.update_targets_count)
+        self.targets_text.bind('<ButtonRelease>', self.update_targets_count)
+        
+        # === СЕКЦІЯ ДІЙ ===
+        actions_frame = ttk.LabelFrame(scrollable_frame, text="⚙️ Налаштування дій", padding=15)
+        actions_frame.pack(fill=tk.X, padx=10, pady=10)
+        
+        # Чекбокси дій
+        self.like_posts_var = tk.BooleanVar(value=True)
+        self.like_stories_var = tk.BooleanVar(value=True)
+        self.reply_stories_var = tk.BooleanVar(value=True)
+        self.send_dm_var = tk.BooleanVar(value=True)
+        
+        ttk.Checkbutton(actions_frame, text="❤️ Лайкати останні пости", 
+                       variable=self.like_posts_var, 
+                       command=self.update_actions_summary).pack(anchor=tk.W, pady=2)
+        ttk.Checkbutton(actions_frame, text="👍 Лайкати сторіс", 
+                       variable=self.like_stories_var,
+                       command=self.update_actions_summary).pack(anchor=tk.W, pady=2)
+        ttk.Checkbutton(actions_frame, text="💬 Відповідати на сторіс", 
+                       variable=self.reply_stories_var,
+                       command=self.update_actions_summary).pack(anchor=tk.W, pady=2)
+        ttk.Checkbutton(actions_frame, text="📩 Відправляти Direct Message (якщо немає сторіс)", 
+                       variable=self.send_dm_var,
+                       command=self.update_actions_summary).pack(anchor=tk.W, pady=2)
+        
+        # Кількість постів
+        posts_frame = ttk.Frame(actions_frame)
+        posts_frame.pack(fill=tk.X, pady=(10, 0))
+        
+        ttk.Label(posts_frame, text="Кількість постів для лайку:").pack(side=tk.LEFT)
+        self.posts_count_var = tk.IntVar(value=2)
+        posts_spin = ttk.Spinbox(posts_frame, from_=1, to=5, textvariable=self.posts_count_var, width=5)
+        posts_spin.pack(side=tk.LEFT, padx=(10, 0))
+        
+        # Резюме дій
+        self.actions_summary_var = tk.StringVar()
+        summary_label = ttk.Label(actions_frame, textvariable=self.actions_summary_var, 
+                                 foreground=self.colors['accent'], font=('Arial', 10))
+        summary_label.pack(anchor=tk.W, pady=(10, 0))
+        self.update_actions_summary()
+        
+        # === СЕКЦІЯ УПРАВЛІННЯ ===
+        control_frame = ttk.LabelFrame(scrollable_frame, text="🎮 Управління", padding=15)
+        control_frame.pack(fill=tk.X, padx=10, pady=10)
+        
+        # Кнопки управління
+        buttons_frame = ttk.Frame(control_frame)
+        buttons_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        self.start_button = tk.Button(buttons_frame, text="▶️ ЗАПУСТИТИ АВТОМАТИЗАЦІЮ", 
+                                     command=self.start_automation,
+                                     bg=self.colors['success'], fg='white',
+                                     font=('Arial', 12, 'bold'), height=2)
+        self.start_button.pack(side=tk.LEFT, padx=(0, 10), fill=tk.X, expand=True)
+        
+        self.stop_button = tk.Button(buttons_frame, text="⏹️ ЗУПИНИТИ", 
+                                    command=self.stop_automation,
+                                    bg=self.colors['error'], fg='white',
+                                    font=('Arial', 12, 'bold'), height=2, state=tk.DISABLED)
+        self.stop_button.pack(side=tk.LEFT, fill=tk.X, expand=True)
+        
+        # Прогрес бар
+        progress_frame = ttk.Frame(control_frame)
+        progress_frame.pack(fill=tk.X, pady=(10, 0))
+        
+        ttk.Label(progress_frame, text="Прогрес:").pack(anchor=tk.W)
+        self.progress_var = tk.DoubleVar()
+        self.progress_bar = ttk.Progressbar(progress_frame, variable=self.progress_var, 
+                                           maximum=100, length=400, mode='determinate')
+        self.progress_bar.pack(fill=tk.X, pady=(5, 0))
         
         # Статус
-        self.status_label = ttk.Label(nav_frame, text="Готовий до роботи", 
-                                     foreground=self.theme['success'])
-        self.status_label.pack(side=tk.RIGHT)
+        self.status_var = tk.StringVar(value="Готовий до запуску")
+        status_label = ttk.Label(progress_frame, textvariable=self.status_var, 
+                                font=('Arial', 11, 'bold'))
+        status_label.pack(anchor=tk.W, pady=(5, 0))
         
-        # Індикатор активності
-        self.activity_var = tk.StringVar(value="●")
-        self.activity_label = ttk.Label(nav_frame, textvariable=self.activity_var,
-                                       foreground=self.theme['success'],
-                                       font=('Arial', 12))
-        self.activity_label.pack(side=tk.RIGHT, padx=(0, 10))
+        # Розміщення скролованого контейнера
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        # Bind mousewheel to canvas
+        def _on_mousewheel(event):
+            canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
+    def create_messages_tab(self):
+        """Вкладка повідомлень з підтримкою багаторядкових текстів"""
+        tab_frame = ttk.Frame(self.notebook)
+        self.notebook.add(tab_frame, text="💬 Повідомлення")
+        
+        # Основний контейнер
+        main_container = ttk.Frame(tab_frame)
+        main_container.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # === ПАНЕЛЬ ІНСТРУМЕНТІВ ===
+        toolbar_frame = ttk.Frame(main_container)
+        toolbar_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        ttk.Button(toolbar_frame, text="➕ Додати повідомлення",
+                  command=self.add_message_dialog).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="✏️ Редагувати",
+                  command=self.edit_message_dialog).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="🗑️ Видалити",
+                  command=self.delete_message).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="📁 Завантажити з файлу",
+                  command=self.load_messages_from_file).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="💾 Зберегти в файл",
+                  command=self.save_messages_to_file).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="🧹 Очистити все",
+                  command=self.clear_all_messages).pack(side=tk.LEFT)
+        
+        # === КОНТЕЙНЕР ДЛЯ СПИСКУ ТА РЕДАКТОРА ===
+        content_frame = ttk.Frame(main_container)
+        content_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Ліва панель - список повідомлень
+        left_frame = ttk.LabelFrame(content_frame, text="📝 Список повідомлень", padding=10)
+        left_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
+        
+        # Listbox з повідомленнями
+        self.messages_listbox = tk.Listbox(left_frame, height=20, 
+                                          bg='white', fg='black',
+                                          selectbackground=self.colors['accent'],
+                                          selectforeground='white',
+                                          font=('Arial', 10))
+        self.messages_listbox.pack(fill=tk.BOTH, expand=True)
+        self.messages_listbox.bind('<<ListboxSelect>>', self.on_message_select)
+        self.messages_listbox.bind('<Double-Button-1>', self.edit_message_dialog)
+        
+        # Права панель - редактор повідомлень
+        right_frame = ttk.LabelFrame(content_frame, text="✏️ Редактор повідомлення", padding=10)
+        right_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=(5, 0))
+        
+        # Інструкції для багаторядкових повідомлень
+        instructions_frame = ttk.Frame(right_frame)
+        instructions_frame.pack(fill=tk.X, pady=(0, 10))
+        
+        instructions_text = """📝 Підтримка багаторядкових повідомлень:
+• Натисніть Enter для нового рядка
+• Залиште порожній рядок для відступу
+• Повідомлення буде відправлено точно як введено
+• Приклад рекламного повідомлення нижче 👇"""
+        
+        instructions_label = tk.Label(instructions_frame, text=instructions_text, 
+                                     justify=tk.LEFT, bg=self.colors['bg'], fg='gray',
+                                     font=('Arial', 9))
+        instructions_label.pack(anchor=tk.W)
+        
+        # Текстове поле для редагування повідомлення
+        editor_frame = ttk.Frame(right_frame)
+        editor_frame.pack(fill=tk.BOTH, expand=True, pady=(10, 0))
+        
+        ttk.Label(editor_frame, text="Введіть або редагуйте повідомлення:", font=('Arial', 11, 'bold')).pack(anchor=tk.W)
+        
+        self.message_editor = scrolledtext.ScrolledText(editor_frame, height=15, width=40, wrap=tk.WORD,
+                                                       bg='white', fg='black',
+                                                       font=('Arial', 11))
+        self.message_editor.pack(fill=tk.BOTH, expand=True, pady=(5, 10))
+        
+        # Приклад повідомлення
+        example_message = """Доброго дня!  
+Мене звати Андрій, я рекламний менеджер ліцензованих онлайн-казино України 🇺🇦
+
+Ми шукаємо партнерів із залученою аудиторією.  
+Пропонуємо співпрацю на вигідних умовах:
+
+— 50$ за кожного ліда  
+— CPA система  
+— Готові рекламні матеріали  
+— Щотижневі виплати
+
+Готові обговорити зручний формат співпраці для вас 👨🏻‍💻
+• Для обговорення деталей, напишіть будь ласка «+»  
+@goldenhive_manager
+
+Дякую за увагу!"""
+        
+        self.message_editor.insert('1.0', example_message)
+        
+        # Кнопки редактора
+        editor_buttons_frame = ttk.Frame(right_frame)
+        editor_buttons_frame.pack(fill=tk.X)
+        
+        ttk.Button(editor_buttons_frame, text="💾 Зберегти повідомлення", 
+                  command=self.save_current_message).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(editor_buttons_frame, text="🧹 Очистити редактор", 
+                  command=self.clear_editor).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(editor_buttons_frame, text="👁️ Переглянути", 
+                  command=self.preview_message).pack(side=tk.LEFT)
+        
+        # Завантаження повідомлень
+        self.load_messages()
         
     def create_accounts_tab(self):
-        """Вкладка акаунтів"""
+        """Вкладка збереження акаунтів"""
         tab_frame = ttk.Frame(self.notebook)
         self.notebook.add(tab_frame, text="👥 Акаунти")
         
@@ -235,296 +370,22 @@ class InstagramBotGUI:
         toolbar_frame = ttk.Frame(tab_frame)
         toolbar_frame.pack(fill=tk.X, padx=10, pady=10)
         
-        ttk.Button(toolbar_frame, text="➕ Додати акаунт",
-                  command=self.add_account_dialog,
-                  style='Accent.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="✏️ Редагувати",
-                  command=self.edit_account_dialog).pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="🗑️ Видалити",
-                  command=self.delete_account,
-                  style='Error.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="🔄 Оновити",
-                  command=self.refresh_accounts).pack(side=tk.LEFT, padx=(0, 5))
-                  
-        # Пошук
-        search_frame = ttk.Frame(toolbar_frame)
-        search_frame.pack(side=tk.RIGHT)
+        ttk.Button(toolbar_frame, text="💾 Зберегти поточний акаунт",
+                  command=self.save_current_account).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="📁 Завантажити акаунт",
+                  command=self.load_account).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="🗑️ Видалити збережений",
+                  command=self.delete_saved_account).pack(side=tk.LEFT)
         
-        ttk.Label(search_frame, text="🔍 Пошук:").pack(side=tk.LEFT, padx=(0, 5))
-        self.search_var = tk.StringVar()
-        self.search_var.trace('w', self.filter_accounts)
-        search_entry = ttk.Entry(search_frame, textvariable=self.search_var, width=20)
-        search_entry.pack(side=tk.LEFT)
+        # Список збережених акаунтів
+        accounts_frame = ttk.LabelFrame(tab_frame, text="Збережені акаунти", padding=10)
+        accounts_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
         
-        # Таблиця акаунтів
-        table_frame = ttk.Frame(tab_frame)
-        table_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
+        self.accounts_listbox = tk.Listbox(accounts_frame, height=10)
+        self.accounts_listbox.pack(fill=tk.BOTH, expand=True)
+        self.accounts_listbox.bind('<Double-Button-1>', self.load_selected_account)
         
-        # Створення Treeview
-        columns = ('username', 'status', 'proxy', 'last_activity', 'actions_today')
-        self.accounts_tree = ttk.Treeview(table_frame, columns=columns, show='headings')
-        
-        # Налаштування колонок
-        self.accounts_tree.heading('username', text='Ім\'я користувача')
-        self.accounts_tree.heading('status', text='Статус')
-        self.accounts_tree.heading('proxy', text='Проксі')
-        self.accounts_tree.heading('last_activity', text='Остання активність')
-        self.accounts_tree.heading('actions_today', text='Дії сьогодні')
-        
-        self.accounts_tree.column('username', width=150)
-        self.accounts_tree.column('status', width=100)
-        self.accounts_tree.column('proxy', width=150)
-        self.accounts_tree.column('last_activity', width=150)
-        self.accounts_tree.column('actions_today', width=100)
-        
-        # Скролбар
-        scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=self.accounts_tree.yview)
-        self.accounts_tree.configure(yscrollcommand=scrollbar.set)
-        
-        # Розміщення
-        self.accounts_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-        
-        # Контекстне меню
-        self.create_context_menu()
-        
-    def create_automation_tab(self):
-        """Вкладка автоматизації"""
-        tab_frame = ttk.Frame(self.notebook)
-        self.notebook.add(tab_frame, text="🤖 Автоматизація")
-        
-        # Основний контейнер
-        main_container = ttk.Frame(tab_frame)
-        main_container.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-        
-        # Ліва панель - налаштування
-        left_frame = ttk.LabelFrame(main_container, text="⚙️ Налаштування автоматизації", padding=10)
-        left_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
-        
-        # Вибір акаунта
-        ttk.Label(left_frame, text="Акаунт:").pack(anchor=tk.W)
-        self.account_var = tk.StringVar()
-        self.account_combo = ttk.Combobox(left_frame, textvariable=self.account_var, state='readonly')
-        self.account_combo.pack(fill=tk.X, pady=(0, 10))
-        
-        # Цільовий користувач
-        ttk.Label(left_frame, text="Цільовий користувач:").pack(anchor=tk.W)
-        self.target_var = tk.StringVar()
-        target_entry = ttk.Entry(left_frame, textvariable=self.target_var)
-        target_entry.pack(fill=tk.X, pady=(0, 10))
-        
-        # Дії
-        actions_frame = ttk.LabelFrame(left_frame, text="Дії", padding=5)
-        actions_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        self.like_posts_var = tk.BooleanVar(value=True)
-        ttk.Checkbutton(actions_frame, text="Лайк останніх постів", 
-                       variable=self.like_posts_var).pack(anchor=tk.W)
-                       
-        self.like_stories_var = tk.BooleanVar(value=True)
-        ttk.Checkbutton(actions_frame, text="Лайк сторіс", 
-                       variable=self.like_stories_var).pack(anchor=tk.W)
-                       
-        self.reply_stories_var = tk.BooleanVar(value=True)
-        ttk.Checkbutton(actions_frame, text="Відповідь на сторіс", 
-                       variable=self.reply_stories_var).pack(anchor=tk.W)
-        
-        # Кількість лайків
-        likes_frame = ttk.Frame(left_frame)
-        likes_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(likes_frame, text="Кількість лайків постів:").pack(anchor=tk.W)
-        self.likes_count_var = tk.IntVar(value=2)
-        likes_spin = ttk.Spinbox(likes_frame, from_=1, to=10, textvariable=self.likes_count_var, width=10)
-        likes_spin.pack(anchor=tk.W)
-        
-        # Затримки
-        delay_frame = ttk.LabelFrame(left_frame, text="Затримки (секунди)", padding=5)
-        delay_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(delay_frame, text="Мін. затримка:").pack(anchor=tk.W)
-        self.min_delay_var = tk.IntVar(value=Config.MIN_DELAY)
-        min_delay_spin = ttk.Spinbox(delay_frame, from_=1, to=60, textvariable=self.min_delay_var, width=10)
-        min_delay_spin.pack(anchor=tk.W, pady=(0, 5))
-        
-        ttk.Label(delay_frame, text="Макс. затримка:").pack(anchor=tk.W)
-        self.max_delay_var = tk.IntVar(value=Config.MAX_DELAY)
-        max_delay_spin = ttk.Spinbox(delay_frame, from_=1, to=120, textvariable=self.max_delay_var, width=10)
-        max_delay_spin.pack(anchor=tk.W)
-        
-        # Кнопки управління
-        control_frame = ttk.Frame(left_frame)
-        control_frame.pack(fill=tk.X, pady=(10, 0))
-        
-        self.start_button = ttk.Button(control_frame, text="▶️ Запустити", 
-                                      command=self.start_automation,
-                                      style='Success.TButton')
-        self.start_button.pack(side=tk.LEFT, padx=(0, 5))
-        
-        self.stop_button = ttk.Button(control_frame, text="⏹️ Зупинити", 
-                                     command=self.stop_automation,
-                                     style='Error.TButton', state=tk.DISABLED)
-        self.stop_button.pack(side=tk.LEFT, padx=(0, 5))
-        
-        ttk.Button(control_frame, text="⏸️ Пауза", 
-                  command=self.pause_automation).pack(side=tk.LEFT)
-        
-        # Права панель - моніторинг
-        right_frame = ttk.LabelFrame(main_container, text="📊 Моніторинг", padding=10)
-        right_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=(5, 0))
-        
-        # Прогрес
-        progress_frame = ttk.Frame(right_frame)
-        progress_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(progress_frame, text="Прогрес:").pack(anchor=tk.W)
-        self.progress_var = tk.DoubleVar()
-        self.progress_bar = ttk.Progressbar(progress_frame, variable=self.progress_var, 
-                                           maximum=100, length=300)
-        self.progress_bar.pack(fill=tk.X, pady=(5, 0))
-        
-        # Статистика
-        stats_frame = ttk.LabelFrame(right_frame, text="Статистика", padding=5)
-        stats_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        self.stats_text = tk.Text(stats_frame, height=8, width=40, 
-                                 bg=self.theme['entry_bg'], fg=self.theme['entry_fg'])
-        self.stats_text.pack(fill=tk.BOTH, expand=True)
-        
-        # Логи реального часу
-        logs_frame = ttk.LabelFrame(right_frame, text="Логи", padding=5)
-        logs_frame.pack(fill=tk.BOTH, expand=True)
-        
-        self.live_logs = scrolledtext.ScrolledText(logs_frame, height=10, width=40,
-                                                  bg=self.theme['entry_bg'], fg=self.theme['entry_fg'])
-        self.live_logs.pack(fill=tk.BOTH, expand=True)
-        
-    def create_messages_tab(self):
-        """Вкладка повідомлень"""
-        tab_frame = ttk.Frame(self.notebook)
-        self.notebook.add(tab_frame, text="💬 Повідомлення")
-        
-        # Панель інструментів
-        toolbar_frame = ttk.Frame(tab_frame)
-        toolbar_frame.pack(fill=tk.X, padx=10, pady=10)
-        
-        ttk.Button(toolbar_frame, text="➕ Додати",
-                  command=self.add_message_dialog,
-                  style='Accent.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="✏️ Редагувати",
-                  command=self.edit_message_dialog).pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="🗑️ Видалити",
-                  command=self.delete_message,
-                  style='Error.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="📁 Імпорт з файлу",
-                  command=self.import_messages).pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="💾 Експорт в файл",
-                  command=self.export_messages).pack(side=tk.LEFT)
-        
-        # Основний контейнер
-        main_container = ttk.Frame(tab_frame)
-        main_container.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
-        
-        # Список повідомлень
-        left_frame = ttk.LabelFrame(main_container, text="📝 Список повідомлень", padding=10)
-        left_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
-        
-        # Listbox з повідомленнями
-        self.messages_listbox = tk.Listbox(left_frame, height=15, 
-                                          bg=self.theme['entry_bg'], fg=self.theme['entry_fg'],
-                                          selectbackground=self.theme['select_bg'],
-                                          selectforeground=self.theme['select_fg'])
-        self.messages_listbox.pack(fill=tk.BOTH, expand=True)
-        self.messages_listbox.bind('<Double-Button-1>', self.edit_message_dialog)
-        
-        # Права панель - попередній перегляд
-        right_frame = ttk.LabelFrame(main_container, text="👁️ Попередній перегляд", padding=10)
-        right_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=(5, 0))
-        
-        # Текст повідомлення
-        self.message_preview = tk.Text(right_frame, height=5, width=30, wrap=tk.WORD,
-                                      bg=self.theme['entry_bg'], fg=self.theme['entry_fg'])
-        self.message_preview.pack(fill=tk.X, pady=(0, 10))
-        
-        # Статистика повідомлень
-        stats_text = tk.Text(right_frame, height=10, width=30,
-                            bg=self.theme['entry_bg'], fg=self.theme['entry_fg'])
-        stats_text.pack(fill=tk.BOTH, expand=True)
-        
-        # Оновлення списку повідомлень
-        self.update_messages_list()
-        
-    def create_statistics_tab(self):
-        """Вкладка статистики"""
-        tab_frame = ttk.Frame(self.notebook)
-        self.notebook.add(tab_frame, text="📈 Статистика")
-        
-        # Панель фільтрів
-        filter_frame = ttk.LabelFrame(tab_frame, text="🔍 Фільтри", padding=10)
-        filter_frame.pack(fill=tk.X, padx=10, pady=10)
-        
-        # Період
-        period_frame = ttk.Frame(filter_frame)
-        period_frame.pack(side=tk.LEFT, padx=(0, 20))
-        
-        ttk.Label(period_frame, text="Період:").pack(anchor=tk.W)
-        self.period_var = tk.StringVar(value="7 днів")
-        period_combo = ttk.Combobox(period_frame, textvariable=self.period_var,
-                                   values=["1 день", "7 днів", "30 днів", "Весь час"],
-                                   state='readonly', width=15)
-        period_combo.pack()
-        period_combo.bind('<<ComboboxSelected>>', self.update_statistics)
-        
-        # Акаунт
-        account_frame = ttk.Frame(filter_frame)
-        account_frame.pack(side=tk.LEFT, padx=(0, 20))
-        
-        ttk.Label(account_frame, text="Акаунт:").pack(anchor=tk.W)
-        self.stats_account_var = tk.StringVar(value="Всі")
-        stats_account_combo = ttk.Combobox(account_frame, textvariable=self.stats_account_var,
-                                          state='readonly', width=20)
-        stats_account_combo.pack()
-        stats_account_combo.bind('<<ComboboxSelected>>', self.update_statistics)
-        
-        # Кнопка оновлення
-        ttk.Button(filter_frame, text="🔄 Оновити", 
-                  command=self.update_statistics,
-                  style='Accent.TButton').pack(side=tk.LEFT, padx=(20, 0))
-        
-        # Контейнер графіків
-        charts_frame = ttk.Frame(tab_frame)
-        charts_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
-        
-        # Створення matplotlib графіків
-        self.create_charts(charts_frame)
-        
-    def create_settings_tab(self):
-        """Вкладка налаштувань"""
-        tab_frame = ttk.Frame(self.notebook)
-        self.notebook.add(tab_frame, text="⚙️ Налаштування")
-        
-        # Notebook для підкатегорій налаштувань
-        settings_notebook = ttk.Notebook(tab_frame)
-        settings_notebook.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
-        
-        # Загальні налаштування
-        self.create_general_settings(settings_notebook)
-        
-        # Налаштування безпеки
-        self.create_security_settings(settings_notebook)
-        
-        # Налаштування проксі
-        self.create_proxy_settings(settings_notebook)
-        
-        # Налаштування капчі
-        self.create_captcha_settings(settings_notebook)
+        self.load_saved_accounts()
         
     def create_logs_tab(self):
         """Вкладка логів"""
@@ -536,421 +397,538 @@ class InstagramBotGUI:
         toolbar_frame.pack(fill=tk.X, padx=10, pady=10)
         
         ttk.Button(toolbar_frame, text="🔄 Оновити",
-                  command=self.refresh_logs,
-                  style='Accent.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
+                  command=self.refresh_logs).pack(side=tk.LEFT, padx=(0, 5))
         ttk.Button(toolbar_frame, text="🗑️ Очистити",
-                  command=self.clear_logs,
-                  style='Warning.TButton').pack(side=tk.LEFT, padx=(0, 5))
-                  
-        ttk.Button(toolbar_frame, text="💾 Експорт",
-                  command=self.export_logs).pack(side=tk.LEFT, padx=(0, 5))
+                  command=self.clear_logs).pack(side=tk.LEFT, padx=(0, 5))
+        ttk.Button(toolbar_frame, text="💾 Зберегти",
+                  command=self.save_logs).pack(side=tk.LEFT, padx=(0, 5))
         
-        # Фільтри логів
-        filter_frame = ttk.Frame(toolbar_frame)
-        filter_frame.pack(side=tk.RIGHT)
+        # Автопрокрутка
+        self.auto_scroll_var = tk.BooleanVar(value=True)
+        ttk.Checkbutton(toolbar_frame, text="📜 Автопрокрутка", 
+                       variable=self.auto_scroll_var).pack(side=tk.RIGHT)
         
-        ttk.Label(filter_frame, text="Рівень:").pack(side=tk.LEFT, padx=(0, 5))
-        self.log_level_var = tk.StringVar(value="Всі")
-        log_level_combo = ttk.Combobox(filter_frame, textvariable=self.log_level_var,
-                                      values=["Всі", "INFO", "WARNING", "ERROR"],
-                                      state='readonly', width=10)
-        log_level_combo.pack(side=tk.LEFT, padx=(0, 10))
-        log_level_combo.bind('<<ComboboxSelected>>', self.filter_logs)
-        
-        ttk.Label(filter_frame, text="Пошук:").pack(side=tk.LEFT, padx=(0, 5))
-        self.log_search_var = tk.StringVar()
-        self.log_search_var.trace('w', self.filter_logs)
-        search_entry = ttk.Entry(filter_frame, textvariable=self.log_search_var, width=20)
-        search_entry.pack(side=tk.LEFT)
-        
-        # Текстове поле для логів
-        logs_frame = ttk.Frame(tab_frame)
+        # Текстове поле логів
+        logs_frame = ttk.LabelFrame(tab_frame, text="Логи реального часу", padding=10)
         logs_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
         
         self.logs_text = scrolledtext.ScrolledText(logs_frame, 
-                                                  bg=self.theme['entry_bg'], 
-                                                  fg=self.theme['entry_fg'],
-                                                  font=('Consolas', 10))
+                                                  font=('Consolas', 10),
+                                                  bg='black', fg='lightgreen',
+                                                  state=tk.DISABLED)
         self.logs_text.pack(fill=tk.BOTH, expand=True)
+
+    # === МЕТОДИ ДЛЯ РОБОТИ З ПОВІДОМЛЕННЯМИ ===
+    
+    def get_messages(self):
+        """Отримання списку повідомлень"""
+        messages = []
+        for i in range(self.messages_listbox.size()):
+            messages.append(self.messages_listbox.get(i))
+        return messages
         
-        # Автооновлення логів
-        self.auto_refresh_logs()
+    def load_messages(self):
+        """Завантаження повідомлень"""
+        try:
+            try:
+                with open('multiline_messages.json', 'r', encoding='utf-8') as f:
+                    messages = json.load(f)
+            except FileNotFoundError:
+                messages = [
+                    "Привіт! 😊",
+                    "Класний пост! 👍",
+                    "Дякую за контент! 🙏",
+                    """Привіт! 😊
+Дуже сподобався твій пост!
+Продовжуй у тому ж дусі! 👍"""
+                ]
+                
+            self.messages_listbox.delete(0, tk.END)
+            for message in messages:
+                # Показуємо тільки першу лінію в списку для зручності
+                display_text = message.split('\n')[0]
+                if len(display_text) > 50:
+                    display_text = display_text[:47] + "..."
+                if '\n' in message:
+                    display_text += " [багаторядкове]"
+                    
+                self.messages_listbox.insert(tk.END, display_text)
+                
+            # Зберігаємо оригінальні повідомлення
+            self.original_messages = messages
+                
+        except Exception as e:
+            messagebox.showerror("Помилка", f"Не вдалося завантажити повідомлення: {e}")
+            
+    def save_messages(self):
+        """Збереження повідомлень"""
+        try:
+            with open('multiline_messages.json', 'w', encoding='utf-8') as f:
+                json.dump(self.original_messages, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            messagebox.showerror("Помилка", f"Не вдалося зберегти повідомлення: {e}")
+            
+    def on_message_select(self, event=None):
+        """Обробка вибору повідомлення зі списку"""
+        selection = self.messages_listbox.curselection()
+        if selection and hasattr(self, 'original_messages'):
+            index = selection[0]
+            if index < len(self.original_messages):
+                self.message_editor.delete('1.0', tk.END)
+                self.message_editor.insert('1.0', self.original_messages[index])
+                
+    def save_current_message(self):
+        """Збереження поточного повідомлення з редактора"""
+        message = self.message_editor.get('1.0', tk.END).strip()
+        if not message:
+            messagebox.showwarning("Попередження", "Введіть текст повідомлення!")
+            return
+            
+        if not hasattr(self, 'original_messages'):
+            self.original_messages = []
+            
+        # Додаємо нове повідомлення
+        self.original_messages.append(message)
         
-    def create_general_settings(self, parent):
-        """Загальні налаштування"""
-        frame = ttk.Frame(parent)
-        parent.add(frame, text="🔧 Загальні")
+        # Оновлюємо список
+        display_text = message.split('\n')[0]
+        if len(display_text) > 50:
+            display_text = display_text[:47] + "..."
+        if '\n' in message:
+            display_text += " [багаторядкове]"
+            
+        self.messages_listbox.insert(tk.END, display_text)
         
-        # Створення скролованого контейнера
-        canvas = tk.Canvas(frame, bg=self.theme['bg'])
-        scrollbar = ttk.Scrollbar(frame, orient="vertical", command=canvas.yview)
-        scrollable_frame = ttk.Frame(canvas)
+        # Зберігаємо
+        self.save_messages()
         
-        scrollable_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        messagebox.showinfo("Успіх", "Повідомлення збережено!")
+        
+    def clear_editor(self):
+        """Очищення редактора"""
+        self.message_editor.delete('1.0', tk.END)
+        
+    def preview_message(self):
+        """Попередній перегляд повідомлення"""
+        message = self.message_editor.get('1.0', tk.END).strip()
+        if not message:
+            messagebox.showwarning("Попередження", "Введіть текст повідомлення!")
+            return
+            
+        # Показуємо як буде виглядати повідомлення
+        preview_window = tk.Toplevel(self.root)
+        preview_window.title("Попередній перегляд повідомлення")
+        preview_window.geometry("500x400")
+        preview_window.configure(bg='white')
+        
+        # Заголовок
+        title_label = tk.Label(preview_window, text="Так буде виглядати ваше повідомлення:",
+                              font=('Arial', 12, 'bold'), bg='white')
+        title_label.pack(pady=10)
+        
+        # Рамка для повідомлення
+        message_frame = tk.Frame(preview_window, bg='#e1f5fe', relief='solid', bd=1)
+        message_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=10)
+        
+        # Текст повідомлення
+        message_label = tk.Label(message_frame, text=message, 
+                                font=('Arial', 11), bg='#e1f5fe', fg='black',
+                                justify=tk.LEFT, anchor='nw')
+        message_label.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # Кнопка закриття
+        tk.Button(preview_window, text="Закрити", command=preview_window.destroy,
+                 bg=self.colors['accent'], fg='white', font=('Arial', 10)).pack(pady=10)
+
+    def add_message_dialog(self):
+        """Діалог додавання повідомлення"""
+        self.clear_editor()
+        messagebox.showinfo("Додавання повідомлення", 
+                           "Введіть повідомлення в редакторі праворуч та натисніть 'Зберегти повідомлення'")
+
+    def edit_message_dialog(self, event=None):
+        """Редагування вибраного повідомлення"""
+        selection = self.messages_listbox.curselection()
+        if not selection:
+            messagebox.showwarning("Попередження", "Виберіть повідомлення для редагування!")
+            return
+            
+        # Повідомлення вже завантажилось в редактор через on_message_select
+        messagebox.showinfo("Редагування", 
+                           "Відредагуйте повідомлення в редакторі та натисніть 'Зберегти повідомлення'.\nСтаре повідомлення буде замінене.")
+        
+        # Позначаємо що ми редагуємо
+        self.editing_index = selection[0]
+
+    def delete_message(self):
+        """Видалення повідомлення"""
+        selection = self.messages_listbox.curselection()
+        if not selection:
+            messagebox.showwarning("Попередження", "Виберіть повідомлення для видалення!")
+            return
+            
+        if messagebox.askyesno("Підтвердження", "Видалити вибране повідомлення?"):
+            index = selection[0]
+            
+            # Видаляємо з оригінального списку
+            if hasattr(self, 'original_messages') and index < len(self.original_messages):
+                del self.original_messages[index]
+                
+            # Видаляємо зі списку
+            self.messages_listbox.delete(index)
+            
+            # Очищаємо редактор
+            self.clear_editor()
+            
+            # Зберігаємо
+            self.save_messages()
+
+    def clear_all_messages(self):
+        """Очищення всіх повідомлень"""
+        if messagebox.askyesno("Підтвердження", "Видалити ВСІ повідомлення?"):
+            self.messages_listbox.delete(0, tk.END)
+            self.original_messages = []
+            self.clear_editor()
+            self.save_messages()
+
+    def load_messages_from_file(self):
+        """Завантаження повідомлень з файлу"""
+        filename = filedialog.askopenfilename(
+            title="Завантажити повідомлення",
+            filetypes=[("JSON files", "*.json"), ("Text files", "*.txt"), ("All files", "*.*")]
         )
         
-        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
-        
-        # Інтерфейс
-        ui_frame = ttk.LabelFrame(scrollable_frame, text="Інтерфейс", padding=10)
-        ui_frame.pack(fill=tk.X, padx=10, pady=10)
-        
-        # Тема
-        theme_frame = ttk.Frame(ui_frame)
-        theme_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(theme_frame, text="Тема:").pack(side=tk.LEFT)
-        self.theme_var = tk.StringVar(value=Config.GUI.get('theme', 'dark'))
-        theme_combo = ttk.Combobox(theme_frame, textvariable=self.theme_var,
-                                  values=["dark", "light"], state='readonly', width=15)
-        theme_combo.pack(side=tk.LEFT, padx=(10, 0))
-        theme_combo.bind('<<ComboboxSelected>>', self.change_theme)
-        
-        # Мова
-        lang_frame = ttk.Frame(ui_frame)
-        lang_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(lang_frame, text="Мова:").pack(side=tk.LEFT)
-        self.lang_var = tk.StringVar(value=Config.GUI.get('language', 'uk'))
-        lang_combo = ttk.Combobox(lang_frame, textvariable=self.lang_var,
-                                 values=["uk", "en", "ru"], state='readonly', width=15)
-        lang_combo.pack(side=tk.LEFT, padx=(10, 0))
-        
-        # Автозбереження
-        self.auto_save_var = tk.BooleanVar(value=Config.GUI.get('auto_save', True))
-        ttk.Checkbutton(ui_frame, text="Автозбереження налаштувань", 
-                       variable=self.auto_save_var).pack(anchor=tk.W)
-        
-        # Поведінка бота
-        bot_frame = ttk.LabelFrame(scrollable_frame, text="Поведінка бота", padding=10)
-        bot_frame.pack(fill=tk.X, padx=10, pady=10)
-        
-        # Headless режим
-        self.headless_var = tk.BooleanVar(value=Config.HEADLESS)
-        ttk.Checkbutton(bot_frame, text="Headless режим (без вікна браузера)", 
-                       variable=self.headless_var).pack(anchor=tk.W, pady=(0, 5))
-        
-        # Таймаут
-        timeout_frame = ttk.Frame(bot_frame)
-        timeout_frame.pack(fill=tk.X, pady=(0, 10))
-        
-        ttk.Label(timeout_frame, text="Таймаут (секунди):").pack(side=tk.LEFT)
-        self.timeout_var = tk.IntVar(value=Config.TIMEOUT)
-        timeout_spin = ttk.Spinbox(timeout_frame, from_=5, to=60, textvariable=self.timeout_var, width=10)
-        timeout_spin.pack(side=tk.LEFT, padx=(10, 0))
-        
-        # Кнопка збереження
-        save_frame = ttk.Frame(scrollable_frame)
-        save_frame.pack(fill=tk.X, padx=10, pady=20)
-        
-        ttk.Button(save_frame, text="💾 Зберегти налаштування", 
-                  command=self.save_settings,
-                  style='Success.TButton').pack()
-        
-        # Розміщення скролованого контейнера
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-        
-    def add_account_dialog(self):
-        """Діалог додавання акаунта"""
-        dialog = tk.Toplevel(self.root)
-        dialog.title("Додати акаунт")
-        dialog.geometry("400x300")
-        dialog.resizable(False, False)
-        dialog.configure(bg=self.theme['bg'])
-        
-        # Центрування діалогу
-        dialog.transient(self.root)
-        dialog.grab_set()
-        
-        # Основний фрейм
-        main_frame = ttk.Frame(dialog, padding=20)
-        main_frame.pack(fill=tk.BOTH, expand=True)
-        
-        # Ім'я користувача
-        ttk.Label(main_frame, text="Ім'я користувача:").pack(anchor=tk.W, pady=(0, 5))
-        username_var = tk.StringVar()
-        username_entry = ttk.Entry(main_frame, textvariable=username_var, width=40)
-        username_entry.pack(fill=tk.X, pady=(0, 10))
-        username_entry.focus()
-        
-        # Пароль
-        ttk.Label(main_frame, text="Пароль:").pack(anchor=tk.W, pady=(0, 5))
-        password_var = tk.StringVar()
-        password_entry = ttk.Entry(main_frame, textvariable=password_var, show='*', width=40)
-        password_entry.pack(fill=tk.X, pady=(0, 10))
-        
-        # Проксі (опційно)
-        ttk.Label(main_frame, text="Проксі (опційно):").pack(anchor=tk.W, pady=(0, 5))
-        proxy_var = tk.StringVar()
-        proxy_entry = ttk.Entry(main_frame, textvariable=proxy_var, width=40)
-        proxy_entry.pack(fill=tk.X, pady=(0, 10))
-        
-        # Підказка для проксі
-        hint_label = ttk.Label(main_frame, text="Формат: ip:port:username:password", 
-                              foreground=self.theme['info'])
-        hint_label.pack(anchor=tk.W, pady=(0, 20))
-        
-        # Кнопки
-        button_frame = ttk.Frame(main_frame)
-        button_frame.pack(fill=tk.X)
-        
-        def save_account():
-            if not username_var.get() or not password_var.get():
-                messagebox.showerror("Помилка", "Заповніть всі обов'язкові поля!")
-                return
+        if filename:
+            try:
+                if filename.endswith('.json'):
+                    with open(filename, 'r', encoding='utf-8') as f:
+                        messages = json.load(f)
+                else:
+                    with open(filename, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        # Розділяємо повідомлення по подвійному переносу рядка
+                        messages = [msg.strip() for msg in content.split('\n\n') if msg.strip()]
                 
-            if self.db.add_account(username_var.get(), password_var.get(), proxy_var.get() or None):
-                messagebox.showinfo("Успіх", "Акаунт успішно додано!")
-                dialog.destroy()
-                self.load_accounts()
+                # Очищаємо поточні повідомлення
+                self.messages_listbox.delete(0, tk.END)
+                self.original_messages = []
+                
+                # Додаємо нові
+                for message in messages:
+                    self.original_messages.append(message)
+                    
+                    display_text = message.split('\n')[0]
+                    if len(display_text) > 50:
+                        display_text = display_text[:47] + "..."
+                    if '\n' in message:
+                        display_text += " [багаторядкове]"
+                        
+                    self.messages_listbox.insert(tk.END, display_text)
+                    
+                self.save_messages()
+                messagebox.showinfo("Успіх", f"Завантажено {len(messages)} повідомлень!")
+                
+            except Exception as e:
+                messagebox.showerror("Помилка", f"Не вдалося завантажити файл: {e}")
+
+    def save_messages_to_file(self):
+        """Збереження повідомлень у файл"""
+        if not hasattr(self, 'original_messages') or not self.original_messages:
+            messagebox.showwarning("Попередження", "Немає повідомлень для збереження!")
+            return
+            
+        filename = filedialog.asksaveasfilename(
+            title="Зберегти повідомлення",
+            defaultextension=".json",
+            filetypes=[("JSON files", "*.json"), ("Text files", "*.txt"), ("All files", "*.*")]
+        )
+        
+        if filename:
+            try:
+                if filename.endswith('.json'):
+                    with open(filename, 'w', encoding='utf-8') as f:
+                        json.dump(self.original_messages, f, indent=2, ensure_ascii=False)
+                else:
+                    with open(filename, 'w', encoding='utf-8') as f:
+                        # Зберігаємо повідомлення розділені подвійним переносом
+                        f.write('\n\n'.join(self.original_messages))
+                        
+                messagebox.showinfo("Успіх", f"Збережено {len(self.original_messages)} повідомлень!")
+                
+            except Exception as e:
+                messagebox.showerror("Помилка", f"Не вдалося зберегти файл: {e}")
+
+    # === РЕШТА МЕТОДІВ (скорочені для економії місця) ===
+    
+    def update_targets_count(self, event=None):
+        """Оновлення лічильника користувачів"""
+        try:
+            content = self.targets_text.get('1.0', tk.END).strip()
+            if not content:
+                count = 0
             else:
-                messagebox.showerror("Помилка", "Не вдалося додати акаунт!")
-        
-        ttk.Button(button_frame, text="💾 Зберегти", command=save_account,
-                  style='Success.TButton').pack(side=tk.RIGHT, padx=(5, 0))
-        ttk.Button(button_frame, text="❌ Скасувати", 
-                  command=dialog.destroy).pack(side=tk.RIGHT)
-        
-    def load_accounts(self):
-        """Завантаження акаунтів"""
-        # Очищення таблиці
-        for item in self.accounts_tree.get_children():
-            self.accounts_tree.delete(item)
+                users = self.parse_targets(content)
+                count = len(users)
             
-        # Завантаження з БД
-        accounts = self.db.get_all_accounts()
-        self.accounts = accounts
+            self.targets_count_var.set(f"Користувачів: {count}")
+        except Exception:
+            self.targets_count_var.set("Користувачів: ?")
+            
+    def parse_targets(self, content):
+        """Парсинг цільових користувачів"""
+        if not content:
+            return []
         
-        for account in accounts:
-            username = account[1]
-            status = account[4]
-            proxy = account[3] or "Немає"
-            last_activity = account[5] or "Ніколи"
-            
-            # Отримання дій за сьогодні
-            today_actions = self.db.get_today_actions(username)
-            actions_count = sum(today_actions.values())
-            
-            # Додавання в таблицю
-            self.accounts_tree.insert('', tk.END, values=(
-                username, status, proxy, last_activity, actions_count
-            ))
-            
-        # Оновлення комбобоксів
-        usernames = [acc[1] for acc in accounts]
-        self.account_combo['values'] = usernames
+        separators = [',', ';', '\n', ' ']
+        users = [content]
         
+        for sep in separators:
+            if sep in content:
+                users = content.split(sep)
+                break
+        
+        cleaned_users = []
+        for user in users:
+            user = user.strip().replace('@', '')
+            if user and len(user) > 0:
+                import re
+                if re.match("^[a-zA-Z0-9._]+$", user) and len(user) >= 1:
+                    cleaned_users.append(user)
+        
+        return cleaned_users
+        
+    def update_actions_summary(self):
+        """Оновлення резюме дій"""
+        actions = []
+        if self.like_posts_var.get():
+            actions.append(f"❤️ Лайк {self.posts_count_var.get()} постів")
+        if self.like_stories_var.get():
+            actions.append("👍 Лайк сторіс")
+        if self.reply_stories_var.get():
+            actions.append("💬 Відповідь на сторіс")
+        if self.send_dm_var.get():
+            actions.append("📩 DM (fallback)")
+            
+        if actions:
+            summary = "Дії: " + " → ".join(actions)
+        else:
+            summary = "⚠️ Не вибрано жодної дії!"
+            
+        self.actions_summary_var.set(summary)
+
+    def validate_targets(self):
+        """Перевірка та валідація користувачів"""
+        content = self.targets_text.get('1.0', tk.END).strip()
+        
+        if not content:
+            messagebox.showwarning("Попередження", "Введіть хоча б одного користувача!")
+            return
+            
+        users = self.parse_targets(content)
+        
+        if not users:
+            messagebox.showerror("Помилка", "Не знайдено валідних юзернеймів!")
+            return
+            
+        result_msg = f"✅ Знайдено {len(users)} валідних користувачів:\n\n"
+        result_msg += "\n".join([f"• @{user}" for user in users[:10]])
+        
+        if len(users) > 10:
+            result_msg += f"\n... та ще {len(users) - 10} користувачів"
+            
+        messagebox.showinfo("Результат валідації", result_msg)
+
     def start_automation(self):
         """Запуск автоматизації"""
-        if not self.account_var.get():
-            messagebox.showerror("Помилка", "Виберіть акаунт!")
+        # Перевірки
+        if not self.username_var.get() or not self.password_var.get():
+            messagebox.showerror("Помилка", "Введіть логін та пароль!")
             return
             
-        if not self.target_var.get():
-            messagebox.showerror("Помилка", "Вкажіть цільового користувача!")
+        targets_content = self.targets_text.get('1.0', tk.END).strip()
+        if not targets_content:
+            messagebox.showerror("Помилка", "Введіть хоча б одного користувача!")
             return
             
-        # Отримання даних акаунта
-        account = self.db.get_account(self.account_var.get())
-        if not account:
-            messagebox.showerror("Помилка", "Акаунт не знайдено!")
+        users = self.parse_targets(targets_content)
+        if not users:
+            messagebox.showerror("Помилка", "Не знайдено валідних користувачів!")
             return
             
-        # Створення і запуск бота в окремому потоці
-        def run_bot():
+        # Отримуємо повідомлення (оригінальні з багаторядковими)
+        if not hasattr(self, 'original_messages') or not self.original_messages:
+            messagebox.showerror("Помилка", "Додайте хоча б одне повідомлення!")
+            return
+            
+        messages = self.original_messages
+        
+        # Підтвердження запуску
+        confirm_msg = f"""🚀 Готові до запуску автоматизації?
+
+👤 Акаунт: {self.username_var.get()}
+🎯 Користувачів: {len(users)}
+💬 Повідомлень: {len(messages)} (включаючи багаторядкові)
+
+Дії:
+{self.actions_summary_var.get()}
+
+⚠️ Процес може тривати довго. Продовжити?"""
+
+        if not messagebox.askyesno("Підтвердження запуску", confirm_msg):
+            return
+            
+        # Налаштування інтерфейсу
+        self.start_button.config(state=tk.DISABLED)
+        self.stop_button.config(state=tk.NORMAL)
+        self.status_var.set("Запуск автоматизації...")
+        self.progress_var.set(0)
+        
+        # Конфігурація дій
+        actions_config = {
+            'like_posts': self.like_posts_var.get(),
+            'like_stories': self.like_stories_var.get(),
+            'reply_stories': self.reply_stories_var.get(),
+            'send_direct_message': self.send_dm_var.get(),
+            'posts_count': self.posts_count_var.get()
+        }
+        
+        # Запуск в окремому потоці
+        def run_automation():
             try:
-                self.update_status("Запуск автоматизації...")
-                self.start_button.config(state=tk.DISABLED)
-                self.stop_button.config(state=tk.NORMAL)
+                # Імпорт вашого бота
+                import sys
+                import os
+                sys.path.append(os.path.dirname(os.path.abspath(__file__)))
                 
-                # Створення бота
-                bot = InstagramBot(account[1], account[2], account[3])
-                self.bots[account[1]] = bot
-                self.running_bots.add(account[1])
+                from instagram_bot import InstagramBot
                 
-                # Отримання повідомлень
-                messages = self.message_manager.messages
+                bot = InstagramBot(
+                    self.username_var.get(), 
+                    self.password_var.get(), 
+                    self.proxy_var.get() or None
+                )
                 
-                # Запуск автоматизації
-                success = bot.run_automation(self.target_var.get(), messages)
+                self.bots[self.username_var.get()] = bot
+                
+                # Підключення логування до GUI
+                self.setup_bot_logging(bot)
+                
+                success = bot.run_automation_multiple_users(targets_content, messages, actions_config)
                 
                 if success:
-                    self.update_status("Автоматизація завершена успішно!")
-                    self.log_message(f"✅ Автоматизація для {account[1]} завершена успішно")
+                    self.log_message("🎉 Автоматизація завершена успішно!")
+                    self.status_var.set("✅ Завершено успішно!")
                 else:
-                    self.update_status("Автоматизація завершена з помилками!")
-                    self.log_message(f"❌ Автоматизація для {account[1]} завершена з помилками")
+                    self.log_message("❌ Автоматизація завершена з помилками!")
+                    self.status_var.set("❌ Завершено з помилками!")
                     
+                self.progress_var.set(100)
+                
             except Exception as e:
-                self.update_status(f"Помилка: {str(e)}")
-                self.log_message(f"❌ Помилка автоматизації: {str(e)}")
+                self.log_message(f"❌ Критична помилка: {e}")
+                self.status_var.set(f"❌ Помилка: {e}")
                 
             finally:
                 self.start_button.config(state=tk.NORMAL)
                 self.stop_button.config(state=tk.DISABLED)
-                self.running_bots.discard(account[1])
-                
-        # Запуск в окремому потоці
-        thread = threading.Thread(target=run_bot)
-        thread.daemon = True
+                if self.username_var.get() in self.bots:
+                    del self.bots[self.username_var.get()]
+                    
+        thread = threading.Thread(target=run_automation, daemon=True)
         thread.start()
-        
-    def stop_automation(self):
-        """Зупинка автоматизації"""
-        for username in list(self.running_bots):
-            if username in self.bots:
-                self.bots[username].close()
-                del self.bots[username]
-                
-        self.running_bots.clear()
-        self.start_button.config(state=tk.NORMAL)
-        self.stop_button.config(state=tk.DISABLED)
-        self.update_status("Автоматизація зупинена")
-        
-    def update_status(self, message):
-        """Оновлення статусу"""
-        self.status_label.config(text=message)
-        
-    def log_message(self, message):
-        """Додавання повідомлення в лог"""
-        timestamp = datetime.now().strftime("%H:%M:%S")
-        log_entry = f"[{timestamp}] {message}\n"
-        
-        self.live_logs.insert(tk.END, log_entry)
-        self.live_logs.see(tk.END)
-        
-        # Обмеження кількості рядків
-        lines = self.live_logs.get(1.0, tk.END).split('\n')
-        if len(lines) > 1000:
-            self.live_logs.delete(1.0, f"{len(lines)-1000}.0")
-            
-    def update_messages_list(self):
-        """Оновлення списку повідомлень"""
-        self.messages_listbox.delete(0, tk.END)
-        for message in self.message_manager.messages:
-            self.messages_listbox.insert(tk.END, message)
-            
-    def add_message_dialog(self):
-        """Діалог додавання повідомлення"""
-        message = tk.simpledialog.askstring("Додати повідомлення", 
-                                           "Введіть текст повідомлення:")
-        if message:
-            self.message_manager.add_message(message)
-            self.update_messages_list()
-            
-    def setup_logging(self):
-        """Налаштування логування для GUI"""
+
+    def setup_bot_logging(self, bot):
+        """Налаштування логування бота для GUI"""
         class GUILogHandler(logging.Handler):
-            def __init__(self, gui):
+            def __init__(self, gui_instance):
                 super().__init__()
-                self.gui = gui
+                self.gui = gui_instance
                 
             def emit(self, record):
                 log_entry = self.format(record)
-                self.gui.log_message(log_entry)
+                self.gui.root.after(0, lambda: self.gui.log_message(log_entry))
                 
-        # Додавання обробника
         gui_handler = GUILogHandler(self)
         gui_handler.setLevel(logging.INFO)
         
-        formatter = logging.Formatter('%(levelname)s: %(message)s')
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
         gui_handler.setFormatter(formatter)
         
-        logging.getLogger().addHandler(gui_handler)
-        
-    def auto_save(self):
-        """Автозбереження налаштувань"""
-        if self.auto_save_var.get():
-            self.save_settings()
-            
-        # Повторити через 5 хвилин
-        self.root.after(300000, self.auto_save)
-        
-    def save_settings(self):
-        """Збереження налаштувань"""
-        try:
-            # Оновлення конфігурації
-            Config.HEADLESS = self.headless_var.get()
-            Config.TIMEOUT = self.timeout_var.get()
-            Config.GUI['theme'] = self.theme_var.get()
-            Config.GUI['language'] = self.lang_var.get()
-            Config.GUI['auto_save'] = self.auto_save_var.get()
-            
-            # Збереження в файл
-            Config.save_config()
-            
-            messagebox.showinfo("Успіх", "Налаштування збережено!")
-            
-        except Exception as e:
-            messagebox.showerror("Помилка", f"Не вдалося зберегти налаштування: {e}")
-            
-    def create_context_menu(self):
-        """Створення контекстного меню для таблиці акаунтів"""
-        self.context_menu = tk.Menu(self.root, tearoff=0)
-        self.context_menu.add_command(label="✏️ Редагувати", command=self.edit_account_dialog)
-        self.context_menu.add_command(label="🗑️ Видалити", command=self.delete_account)
-        self.context_menu.add_separator()
-        self.context_menu.add_command(label="🔄 Перевірити статус", command=self.check_account_status)
-        self.context_menu.add_command(label="📊 Статистика", command=self.show_account_stats)
-        
-        def show_context_menu(event):
-            try:
-                self.context_menu.tk_popup(event.x_root, event.y_root)
-            finally:
-                self.context_menu.grab_release()
-                
-        self.accounts_tree.bind("<Button-3>", show_context_menu)
-        
-    def run(self):
-        """Запуск GUI"""
-        self.root.mainloop()
-        
-    def on_closing(self):
-        """Обробник закриття програми"""
-        # Зупинка всіх ботів
-        self.stop_automation()
-        
-        # Збереження налаштувань
-        if self.auto_save_var.get():
-            self.save_settings()
-            
-        self.root.destroy()
+        bot.logger.addHandler(gui_handler)
 
-# Додаткові методи (скорочена версія для економії місця)
-    def edit_account_dialog(self): pass
-    def delete_account(self): pass
-    def refresh_accounts(self): pass
-    def filter_accounts(self, *args): pass
-    def pause_automation(self): pass
-    def edit_message_dialog(self): pass
-    def delete_message(self): pass
-    def import_messages(self): pass
-    def export_messages(self): pass
-    def create_charts(self, parent): pass
-    def update_statistics(self, *args): pass
-    def create_security_settings(self, parent): pass
-    def create_proxy_settings(self, parent): pass
-    def create_captcha_settings(self, parent): pass
+    def stop_automation(self):
+        """Зупинка автоматизації"""
+        if messagebox.askyesno("Підтвердження", "Ви впевнені, що хочете зупинити автоматизацію?"):
+            for bot in self.bots.values():
+                try:
+                    bot.close()
+                except:
+                    pass
+                    
+            self.bots.clear()
+            self.start_button.config(state=tk.NORMAL)
+            self.stop_button.config(state=tk.DISABLED)
+            self.status_var.set("⏹️ Зупинено користувачем")
+            self.log_message("⏹️ Автоматизацію зупинено користувачем")
+
+    def log_message(self, message):
+        """Додавання повідомлення до логів"""
+        try:
+            timestamp = datetime.now().strftime("%H:%M:%S")
+            log_entry = f"[{timestamp}] {message}\n"
+            
+            self.logs_text.config(state=tk.NORMAL)
+            self.logs_text.insert(tk.END, log_entry)
+            
+            if self.auto_scroll_var.get():
+                self.logs_text.see(tk.END)
+                
+            self.logs_text.config(state=tk.DISABLED)
+            
+            lines = self.logs_text.get(1.0, tk.END).split('\n')
+            if len(lines) > 1000:
+                self.logs_text.config(state=tk.NORMAL)
+                self.logs_text.delete(1.0, f"{len(lines)-1000}.0")
+                self.logs_text.config(state=tk.DISABLED)
+                
+        except Exception as e:
+            print(f"Помилка логування: {e}")
+
+    # === ЗАГЛУШКИ ДЛЯ ІНШИХ МЕТОДІВ ===
+    def load_targets_from_file(self): pass
+    def save_targets_to_file(self): pass  
+    def clear_targets(self): pass
+    def save_current_account(self): pass
+    def load_account(self): pass
+    def delete_saved_account(self): pass
+    def load_saved_accounts(self): pass
+    def load_selected_account(self, event=None): pass
     def refresh_logs(self): pass
     def clear_logs(self): pass
-    def export_logs(self): pass
-    def filter_logs(self, *args): pass
-    def auto_refresh_logs(self): pass
-    def change_theme(self, *args): pass
-    def import_accounts(self): pass
-    def export_accounts(self): pass
-    def check_proxies(self): pass
-    def create_backup(self): pass
-    def show_help(self): pass
-    def show_about(self): pass
-    def check_account_status(self): pass
-    def show_account_stats(self): pass
+    def save_logs(self): pass
+
+    def run(self):
+        """Запуск GUI"""
+        self.log_message("🚀 Instagram Bot з багаторядковими повідомленнями запущено")
+        self.log_message("📝 Можете додавати повідомлення з переносами рядків")
+        self.log_message("💡 Використовуйте вкладку 'Повідомлення' для редагування")
+        self.root.mainloop()
+
+    def on_closing(self):
+        """Обробник закриття програми"""
+        if self.bots:
+            if messagebox.askyesno("Підтвердження", "Є активна автоматизація. Все одно закрити?"):
+                for bot in self.bots.values():
+                    try:
+                        bot.close()
+                    except:
+                        pass
+                self.root.destroy()
+        else:
+            self.root.destroy()
+
 
 if __name__ == "__main__":
     app = InstagramBotGUI()
+    app.root.protocol("WM_DELETE_WINDOW", app.on_closing)
     app.run()
